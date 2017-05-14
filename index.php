@@ -40,7 +40,7 @@ if (defined('ENVIRONMENT'))
 		case 'production':
 			error_reporting(0);
 
-            // Don't display errors (they can still be logged)
+            //Don't display errors (they can still be logged)
             //ini_set('display_errors', 1);
 		break;
 

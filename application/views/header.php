@@ -14,6 +14,15 @@
 	<link href="<?php echo base_url(); ?>css/pages/dashboard.css" rel="stylesheet">
 	<link href="<?php echo base_url(); ?>css/pages/signin.css" rel="stylesheet" type="text/css">
   <link href="<?php echo base_url(); ?>js/guidely/guidely.css" rel="stylesheet"> 
+  <script src="<?php echo base_url(); ?>js/plugins/canvas-to-blob.min.js" type="text/javascript"></script>
+  <script src="<?php echo base_url(); ?>js/plugins/sortable.min.js" type="text/javascript"></script>
+  <script src="<?php echo base_url(); ?>js/plugins/purify.min.js" type="text/javascript"></script>
+  <script src="<?php echo base_url(); ?>js/fileinput.min.js"></script>
+
+<!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/v/bs/jqc-1.12.4/dt-1.10.15/datatables.min.js"></script> -->
+
+
 
 
 	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -47,9 +56,7 @@
                 <li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><?=DEPARTMENT_NAME?></a>
                 </li>
               </ul>
-              <!-- <form class="navbar-search pull-right" action="<?php echo base_url('search'); ?>" method="POST">
-                <input type="text" name="customer" class="search-query" placeholder="Tìm kiếm khách hàng">
-              </form> -->
+              
           </div>
           <!--/.nav-collapse --> 
       <? } ?>
@@ -74,7 +81,7 @@
               <!-- <li <? if($page == "reservation"){ echo 'class="active"'; } ?>><a href="<?php echo base_url('reservation'); ?>"><i class="icon-list-alt"></i><span>Danh sách các loại phí</span> </a> </li> -->
               <li <? if($page == "phi"){ echo 'class="active"'; } ?>><a href="<?php echo base_url('phi'); ?>"><i class="icon-list-alt"></i><span>Quản lý các loại phí</span> </a> </li>
              <!--  <li <? if($page == "departments"){ echo 'class="active"'; } ?>><a href="<?php echo base_url('departments'); ?>"><i class="icon-file"></i><span>Departments</span> </a> </li> -->
-              <!-- <li <? if($page == "caidat"){ echo 'class="active"'; } ?>><a href="<?php echo base_url('caidat'); ?>"><i class="icon-info-sign"></i><span>Thông tin nhà trọ</span> </a> </li> -->
+              <li <? if($page == "caidat"){ echo 'class="active"'; } ?>><a href="<?php echo base_url('caidat'); ?>"><i class="icon-info-sign"></i><span>Thông tin nhà trọ</span> </a> </li> 
             </ul>
           </div>
           <!-- /container --> 

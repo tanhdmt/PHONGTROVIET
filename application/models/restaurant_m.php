@@ -8,9 +8,16 @@ class Restaurant_m extends CI_Model {
         parent::__construct();
     }
     
-    function get_restaurants()
+    function getNhatro($mant)
     {
-        $query = $this->db->from('restaurant')->get();
+        $query = $this->db->get_where('nhatro', array('MaNT' => $mant));
+        return $query->result();
+        
+    } 
+
+    function getTinh()
+    {
+        $query = $this->db->from('province')->get();
         $data = array();
 
         foreach (@$query->result() as $row)
@@ -21,6 +28,20 @@ class Restaurant_m extends CI_Model {
             return $data;
         return false;
     } 
+
+    function getQuan($matinh)
+    {
+        $query = $this->db->get_where('district', array('provinceid' => $matinh));
+        return $query->result();
+    }
+
+    function updateNhatro($mant, $diachi, $sdt, $dientich, $soluong, $tinh, $quan, $toado, $mota)
+    {
+        $data = array('DiaChi' => $diachi, 'SDT' => $sdt, 'DienTich' => $dientich, 'SoLuongPhong' => $soluong, 'TinhThanh' => $tinh, 'QuanHuyen' => $quan, 'MoTa' => $mota, 'ToaDo' =>$toado);
+
+        $this->db->where('MaNT', $mant);
+        $this->db->update('nhatro', $data); 
+    }
 
     function addRestaurant($restaurantName, $restaurantOpenTime, $restaurantCloseTime, $restaurantDetails, $tableCount)
     {

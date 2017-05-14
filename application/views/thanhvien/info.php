@@ -3,8 +3,8 @@
     <div class="container">
       <div class="span4">
       <div class="wrap">
-        <a href="<?php echo base_url(); ?>hoadon/info/<?=$daidien->MaPhong?>" class="element btn btn-success btn-large" style="float:"><i class="icon-money"></i>  Danh sách Hóa đơn</a>
-        <!-- <a href="<?php echo base_url(); ?>customer/add/reservation" class="element btn btn-primary btn-large"><i class="icon-gear"></i>  Cài đặt phí</a> -->
+        <a href="<?php echo base_url(); ?>hoadon/info/<?=$daidien->MaPhong?>" class="element btn btn-success btn-large" ><i class="icon-money"></i> Danh sách Hóa đơn</a>
+        <a href="<?php echo base_url(); ?>thanhvien/traphong/<?=$daidien->MaPhong?>" onclick="return confirm('Xác nhận trả phòng?')" class="element btn btn-danger btn-large"><i class="icon-trash"></i>  Trả phòng</a>
       </div>
         <div class="account-container">
           
@@ -54,10 +54,10 @@
           <h4 class="ten"><?=$daidien->LoaiPhong?></h4>
         </div> <!-- /field -->
 
-        <div class="field">
+        <!-- <div class="field">
           <label for="customer_TCno"><i class="icon-time"></i> Ngày trả phòng:</label>
           <h4 class="ten"><?=$daidien->NgayTra?></h4>
-        </div> <!-- /field -->
+        </div> <!-- /field --> 
         <!--div class="field">
           <label for="room_quantity">Quantity:</label>
           <input type="number" min="1" id="quantity" name="quantity" value="" placeholder="Quantity"/>
@@ -86,11 +86,11 @@
 
 
 </div>
-<style type="text/css">.wrap{display: table;}.element{width:50%;display:table-cell;}.ghichu{padding-bottom:10px;}.account-container{margin-top: 10px;margin-bottom:10px;padding-bottom: 15px;}.ten{padding-left: 15px; color:#3470d1;}.field{margin-bottom: 7px;}</style>
+<style type="text/css">.wrap{display: table;border-collapse: separate;border-spacing: 5px;}.element{width:50%;display:table-cell;}.ghichu{padding-bottom:10px;}.account-container{margin-top: 10px;margin-bottom:10px;padding-bottom: 15px;}.ten{padding-left: 15px; color:#3470d1;}.field{margin-bottom: 7px;}</style>
       <div class="span7">
       <a href="<?php echo base_url(); ?>thanhvien/add/<?=$thanhvien[0]->MaPhong?>" class="btn btn-small btn-primary"><i class="btn-icon-only icon-ok"></i>Thêm thành viên</a>
       <br><br>
-        <table class="table table-striped table-bordered">
+        <table id="myTable" class="table table-striped table-bordered">
         <thead>
           <tr>
             <th> Tên thành viên </th>

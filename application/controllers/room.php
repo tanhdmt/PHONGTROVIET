@@ -141,8 +141,9 @@ class Room extends CI_Controller {
 			$new_tinhtrang = "Đang ở";
 			$new_phong = $maphong;
 			$new_chucvu = "DD";
+			$date=$this->input->post("ngaythue");
 
-			$this->room_m->addThanhvien($new_nguoithue, $new_sdt, $new_cmnd, $new_gioitinh, $new_tinhtrang, $new_phong, $new_chucvu);
+			$this->room_m->addThanhvien($new_nguoithue, $new_sdt, $new_cmnd, $new_gioitinh, $new_tinhtrang, $new_phong, $new_chucvu, $date);
 
 			$new_ngaythue = $this->input->post("ngaythue");
 			$new_ghichu = $this->input->post("ghichu");
@@ -163,8 +164,19 @@ class Room extends CI_Controller {
 		$this->load->view('footer');
 	}
 
+	public function history($maphong)
+	{
+		$his = $this->room_m->getLichsu($maphong);
 
-	public function index($mant)
+		$viewdata = array('his' => $his);
+
+		$data = array('title' => 'Lịch sử thuê phòng - PHÒNG TRỌ VIỆT', 'page' => 'room');
+		$this->load->view('header', $data);
+		$this->load->view('room/history',$viewdata);
+		$this->load->view('footer');
+	}
+
+	public function index()
 	{
 		$this->check_login();
 		

@@ -108,7 +108,7 @@ textarea {
     color: #666;
 }
 
-.navbar-search .search-query { background:#008866; border:0; color:#fff; line-height:normal;}
+.navbar-search .search-query { background:#8c8c8c; border:0; color:#000; line-height:normal;}
 
 
 /*------------------------------------------------------------------
@@ -116,7 +116,7 @@ textarea {
 */
 
 .subnavbar {
-    	margin-bottom: 2.5em;
+    	margin-bottom: 20px;;
     }
     
 .subnavbar-inner {

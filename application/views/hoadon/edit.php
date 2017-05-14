@@ -14,14 +14,14 @@
 						<table class="table table-striped ">
 							<thead style="background-color: #1396e2; color:#fff;">
 							  <tr>
-							    <th style="width: 30%;"> Nội dung thanh toán </th>
+							    <th style="width: 30%; text-align: center;"> Nội dung thanh toán </th>
 							    <th style="width: 15%;"> Đơn giá </th>
 							    <th style="width: 15%;"> Chỉ số cũ </th>
 							    <th style="width: 15%;"> Chỉ số mới </th>
 							    <th style="width: 25%;"> Thành tiền </th>
 							  </tr>
 							</thead>
-							<tbody>
+							<tbody>	
 							<?
 								$i = 0;
 								foreach ($chiphi as $cp) {
@@ -29,7 +29,7 @@
 								++$i;	
 							?>
 							  <tr>
-							    <td> <?=$cp->TenCP ?> </td>
+							    <td style="text-align: center;"> <?=$cp->TenCP ?> </td>
 							    
 							    <? if(strcasecmp($cp->TenCP, "Điện") == 0) { ?>	
 							    	<td> <input type="number" id="dgdien" name="dgdien" value="<?=$cp->DonGia ?>" placeholder="" readonly style="border:none;border-color: transparent; background-color: transparent;"/> </td>
@@ -62,7 +62,7 @@
 							  </tr>
 							<? } ?>
 								<tr>
-									<td> Tiền Phòng </td>
+									<td style="text-align: center;"> Tiền Phòng </td>
 									<td> <?=$tienphong->GiaPhong ?> </td>
 									<td> 0</td>
 									<td> 0</td>
@@ -129,3 +129,12 @@
 	</div>
   </div>
 </div>
+
+<style type="text/css">
+	input{
+		width:100%;
+	}
+	th{
+		text-align: center;
+	}
+</style>

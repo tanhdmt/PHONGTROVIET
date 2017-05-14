@@ -37,19 +37,8 @@
 				</div> 
 
 				<div class="field">
-					<label for="nguoithue">Ngày trả phòng:</label>
-					
-					<? if(!empty($department->DuDinhTra)){?>
-						<input type="date" id="ngaytra" name="ngaytra" value = "<?php echo date('Y-m-d',strtotime($department->DuDinhTra)) ?>" placeholder=""/>
-					<? } else {?>
-						<input type="date" id="ngaytra" name="ngaytra" placeholder=""/>
-					<?}?>
-				</div> 
-
-
-				<div class="field">
 					<label for="songuoi">Ghi chú:</label>
-					<input type="text" id="ghichu" name="ghichu" value="<?=$department->GhiChu?>" value="" placeholder="" style="height: 50px;"/>
+					<textarea rows="4" id="ghichu" name="ghichu" value="<?=$department->GhiChu?>" value="" placeholder=""></textarea>
 				</div> 
 
 				

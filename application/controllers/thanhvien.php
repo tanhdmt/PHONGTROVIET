@@ -43,8 +43,9 @@ class Thanhvien extends CI_Controller {
 			$new_tinhtrang = "Đang ở";
 			$new_maphong = $maphong;
 			$new_chucvu = "TV";
+			$date=date("Y-m-d");
 
-			$this->departments_m->addThanhvien($new_tentv, $new_sdt, $new_cmnd, $new_gioitinh, $new_tinhtrang, $new_maphong, $new_chucvu);
+			$this->departments_m->addThanhvien($new_tentv, $new_sdt, $new_cmnd, $new_gioitinh, $new_tinhtrang, $new_maphong, $new_chucvu, $date);
 			redirect("/thanhvien/info/".$maphong);	
 		}	
 		
@@ -60,9 +61,16 @@ class Thanhvien extends CI_Controller {
 
 	function delete($matv, $maphong)
 	{
-		$this->departments_m->deleteThanhvien($matv);
+		$date=date("Y-m-d");
+		$this->departments_m->deleteThanhvien($matv, $date);
+		$count = $this->departments_m->countThanhvien($maphong);
 		$this->departments_m->reseed();
-		redirect("/thanhvien/info/".$maphong);	
+		if($count[0]->Count == 0){
+			$this->departments_m->updateTinhtrangPhong($maphong);
+			redirect("/room");
+		}
+		else
+			redirect("/thanhvien/info/".$maphong);	
 	}
 
 	public function edit($matv, $maphong)
@@ -97,6 +105,15 @@ class Thanhvien extends CI_Controller {
 		$this->load->view('thanhvien/edit',$viewdata);
 
 		$this->load->view('footer');
+	}
+
+	public function traphong($maphong)
+	{
+		$date=date("Y-m-d");
+		$this->departments_m->traphong($maphong, $date);	
+		$this->departments_m->updateTinhtrangPhong($maphong);
+		$this->departments_m->reseed();
+		redirect("/room");	
 	}
 
 	public function chothue($maphong)
@@ -147,6 +164,10 @@ class Thanhvien extends CI_Controller {
 
 	public function info($maphong)
 	{
+		$count = $this->departments_m->countThanhvien($maphong);
+		if($count[0]->Count == 0){
+			$this->departments_m->updateTinhtrangPhong($maphong);
+		}
 		$thanhvien = $this->departments_m->get_thanhvien($maphong);
 		$daidien = $this->departments_m->get_daidien($maphong);
 		$ghichu = $this->departments_m->getGhichu($maphong);

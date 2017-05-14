@@ -3,18 +3,25 @@
     <div class="container">
       <div class="row">
         <div class="span12">
-			<a href="<?php echo base_url(); ?>room/add" class="btn btn-small btn-primary"><i class="btn-icon-only icon-ok"></i>Thêm phòng</a>
-			<br><br>
-			<table class="table table-striped table-bordered">
-				<thead>
+        <h2> Danh sách các phòng </h2>
+        <br>
+        	<div>
+				<a href="<?php echo base_url(); ?>room/add" class="btn btn-small btn-primary"><i class="btn-icon-only icon-ok"></i>Thêm phòng</a>
+				<form class="navbar-search pull-right" action="<?php echo base_url('search'); ?>" method="POST">
+                	<input type="text" name="customer" id="mySearch" onkeyup="myFunction()" class="search-query" placeholder="Tìm kiếm người thuê trọ">
+              	</form>
+			</div>
+			<br>
+			<table id="myTable" class="table table-striped">
+				<thead style="background-color: #22a5f8; color:#fff;">
 				  <tr>
-				    <th style="width: 10%;"> Mã phòng </th>
-				    <th style="width: 15%;"> Ngày thuê </th>
-				    <th style="width: 20%;"> Người thuê </th>
+				    <th > Mã phòng </th>
+				    <th > Ngày thuê </th>
+				    <th > Người thuê </th>
 				    <!-- <th> Dự định trả </th> -->
-				    <th style="width: 15%;"> Loại phòng </th>
-				    <th style="width: 15%;"> Số người ở trong phòng </th>
-				    <th style="width: 25%;" class="td-actions"> Công cụ </th>
+				    <th > Loại phòng </th>
+				    <th > Số người ở trong phòng </th>
+				    <th  class="td-actions"> Công cụ </th>
 				  </tr>
 				</thead>
 				<tbody>
@@ -24,8 +31,13 @@
 						// $emp->username
 				?>
 				  <tr>
-				    <td class="count"> </td>	
-					<td> <?=$rm->ngaythue ?> </td>
+				    <td class="count"	> </td>	
+				    <? if($rm->tinhtrang != "Trống") { ?>	
+						<td> <?=$rm->ngaythue ?> </td>
+					<? } else {?>
+						<td> </td>
+				    <? } ?>
+					
 				    <? if($rm->tinhtrang != "Trống") { ?>	
 						<td> <?=$rm->nguoidd ?></a></td>
 					<? } else {?>
@@ -33,11 +45,15 @@
 				    <? } ?>
 				    <!-- <td> <?=$rm->dudinhtra ?> </td> -->
 				    <td> <?=$rm->tenloai ?> </td>
-				    <td> <?=$rm->songuoi ?></td>
+				    <td style="text-align: center;"> <?=$rm->songuoi ?></td>
 				    <td class="td-actions">
-				    	<a href="<?php echo base_url(); ?>thanhvien/info/<?=$rm->maphong?>"" class="btn btn-small btn-success"><i class="btn-icon-only icon-edit"> </i> Thông tin phòng</a>
+						
 				    	<a href="<?php echo base_url(); ?>room/edit/<?=$rm->maphong?>" class="btn btn-small btn-primary"><i class="btn-icon-only icon-gear"> </i> Sửa</a>
-				    	
+				    	<? if($rm->tinhtrang != "Trống") { ?>	
+							<a href="<?php echo base_url(); ?>thanhvien/info/<?=$rm->maphong?>"" class="btn btn-small btn-success"><i class="btn-icon-only icon-edit"> </i> Thông tin phòng</a>
+						<?}?>
+				    	<a href="<?php echo base_url(); ?>room/history/<?=$rm->maphong?>" class="btn btn-small btn-warning"><i class="btn-icon-only icon-undo"> </i> Lịch sử thuê</a>
+				    	 
 				    </td>
 				  </tr>
 				<? }} ?>
@@ -55,4 +71,6 @@
 	counter-increment:section;
 	content:counter(section);
 	}
+
 </style>
+

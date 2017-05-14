@@ -24,7 +24,7 @@ class Room_m extends CI_Model {
     } 
     function get_rooms($manhatro)
     {
-        $sql = 'select *, (select TenLoaiPhong from loaiphong where phongtro.MaLoaiPhong = loaiphong.MaLoaiPhong) as TenLoai, (select count(*) from thanhvien where thanhvien.MaPhong = phongtro.MaPhong and thanhvien.TinhTrang=\'Đang ở\') as SoNguoi, (select TenTV from thanhvien where thanhvien.MaPhong = phongtro.MaPhong and ChucVu = \'DD\') as NguoiDD from phongtro where MaNT='.$manhatro;  
+        $sql = 'select *, (select TenLoaiPhong from loaiphong where phongtro.MaLoaiPhong = loaiphong.MaLoaiPhong) as TenLoai, (select count(*) from thanhvien where thanhvien.MaPhong = phongtro.MaPhong and thanhvien.TinhTrang=\'Đang ở\') as SoNguoi, (select TenTV from thanhvien where thanhvien.MaPhong = phongtro.MaPhong and ChucVu = \'DD\' and TinhTrang=\'Đang ở\') as NguoiDD from phongtro where MaNT='.$manhatro;  
 
         $query = $this->db->query($sql);
         $data = array();
@@ -47,6 +47,12 @@ class Room_m extends CI_Model {
         if(count($data))
             return $data;
         return false;
+    }
+
+    function getLichsu($maphong)
+    {
+        $query = $this->db->query('select * from thanhvien where TinhTrang=\'Không ở\' and MaPhong='.$maphong);
+        return $query->result();
     }
 
     function addRoomType($type, $price, $mant)
@@ -156,9 +162,9 @@ class Room_m extends CI_Model {
         $this->db->insert('room_sales', $data);
     }
 
-    function addThanhvien($tentv, $sdt, $cmnd, $gioitinh, $tinhtrang, $maphong, $chucvu)
+    function addThanhvien($tentv, $sdt, $cmnd, $gioitinh, $tinhtrang, $maphong, $chucvu, $date)
     {
-        $data = array('TenTV' => $tentv, 'Sdt' => $sdt, 'CMND' => $cmnd, 'GioiTinh' => $gioitinh, 'TinhTrang' => $tinhtrang, 'MaPhong' => $maphong, 'ChucVu' => $chucvu);
+        $data = array('TenTV' => $tentv, 'Sdt' => $sdt, 'CMND' => $cmnd, 'GioiTinh' => $gioitinh, 'TinhTrang' => $tinhtrang, 'MaPhong' => $maphong, 'ChucVu' => $chucvu, 'NgayThue' => $date);
         $this->db->insert('thanhvien', $data);
         return $this->db->affected_rows();
     } 

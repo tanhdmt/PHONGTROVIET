@@ -72,6 +72,55 @@ class Caidat extends CI_Controller {
 		$this->load->view('footer');
 	}
 
+	public function upload()
+	{
+		$viewdata = array();
+		
+		$images_arr = array();
+		foreach($_FILES['images']['name'] as $key=>$val){
+			$image_name = $_FILES['images']['name'][$key];
+			$tmp_name 	= $_FILES['images']['tmp_name'][$key];
+			$size 		= $_FILES['images']['size'][$key];
+			$type 		= $_FILES['images']['type'][$key];
+			$error 		= $_FILES['images']['error'][$key];
+			
+			############ Remove comments if you want to upload and stored images into the "uploads/" folder #############
+			
+			// $target_dir = "img/";
+			// $target_file = $target_dir.$_FILES['images']['name'][$key];
+			// if(move_uploaded_file($_FILES['images']['tmp_name'][$key],$target_file)){
+			// 	$images_arr[] = $target_file;
+			// }
+			
+			//display images without stored
+			$extra_info = getimagesize($_FILES['images']['tmp_name'][$key]);
+	    	$images_arr[] = "data:" . $extra_info["mime"] . ";base64," . base64_encode(file_get_contents($_FILES['images']['tmp_name'][$key]));
+		}
+		$viewdata = array('image_arr' => $image_arr);
+		$this->load->view('caidat/info',$viewdata);
+		//Generate images view
+		// if(!empty($images_arr)){ 
+		// 	$count=0;
+		// 	foreach($images_arr as $image_src){ 
+		// 		echo 'ok';
+		// 	}
+		// }
+		
+	}
+
+	public function list_quan()
+	{
+		$matinh = $this->input->post('id');
+		$tinh = $this->restaurant_m->getQuan($matinh);
+		$tinh_select = '';
+		$tinh_select .= '<option value="">Chọn Quận/Huyện</option>';
+		foreach ($tinh as $t) {
+			$tinh_select .= '<option value="'.$t->districid.'">'.$t->type.' '.$t->name.'</option>';
+			//echo $tinh_select;
+		}
+		
+		echo(json_encode($tinh_select));
+	}
 	// public function index()
 	// {
 	// 	$departments = $this->departments_m->get_departments();
@@ -85,9 +134,25 @@ class Caidat extends CI_Controller {
 	// }
 	public function index()
 	{
-		//$cp = $this->sport_facility_m ->get_phi();
+		
+		if($this->input->post("diachi"))
+		{
+			$new_diachi = $this->input->post("diachi");
+			$new_sdt = $this->input->post("sdt");
+			$new_dientich = $this->input->post("dientich");
+			$new_soluong = $this->input->post("soluong");
+			$new_tinh = $this->input->post("tinhthanh");
+			$new_quan = $this->input->post("quanhuyen");
+			$new_toado = $this->input->post('data');
+			$new_mota = $this->input->post('mota');
 
-		$viewdata = array();
+			$this->restaurant_m->updateNhatro(UID, $new_diachi, $new_sdt, $new_dientich, $new_soluong, $new_tinh, $new_quan, $new_toado, $new_mota);
+			redirect("/room");	
+		}
+		//$cp = $this->sport_facility_m ->get_phi();
+		$tinh = $this->restaurant_m->getTinh();
+		$nhatro = $this->restaurant_m->getNhatro(UID);
+		$viewdata = array('tinh' =>$tinh, 'nhatro' =>$nhatro[0]);
 
 		$data = array('title' => 'Thông tin nhà trọ - PHÒNG TRỌ VIỆT', 'page' => 'caidat');
 		$this->load->view('header', $data);

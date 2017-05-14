@@ -687,3 +687,5 @@ ERROR - 2017-05-09 09:40:40 --> Severity: Notice  --> Undefined variable: error 
 ERROR - 2017-05-09 09:45:24 --> Severity: Warning  --> Missing argument 1 for Room::index() C:\xampp\htdocs\hotel\application\controllers\room.php 167
 ERROR - 2017-05-09 09:45:24 --> Severity: Notice  --> Undefined variable: error C:\xampp\htdocs\hotel\application\views\login.php 11
 ERROR - 2017-05-09 09:45:25 --> Severity: Notice  --> Undefined variable: viewdata C:\xampp\htdocs\hotel\application\controllers\register.php 30
+ERROR - 2017-05-09 17:02:25 --> Severity: Notice  --> Undefined variable: error C:\xampp\htdocs\hotel\application\views\login.php 11
+ERROR - 2017-05-09 17:02:29 --> 404 Page Not Found --> PHONGTROVIET
