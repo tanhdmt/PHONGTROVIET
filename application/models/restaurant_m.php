@@ -35,9 +35,17 @@ class Restaurant_m extends CI_Model {
         return $query->result();
     }
 
-    function updateNhatro($mant, $diachi, $sdt, $dientich, $soluong, $tinh, $quan, $toado, $mota)
+    function updateNhatro($mant, $diachi, $sdt, $dientich, $soluong, $tinh, $quan, $mota)
     {
-        $data = array('DiaChi' => $diachi, 'SDT' => $sdt, 'DienTich' => $dientich, 'SoLuongPhong' => $soluong, 'TinhThanh' => $tinh, 'QuanHuyen' => $quan, 'MoTa' => $mota, 'ToaDo' =>$toado);
+        $data = array('DiaChi' => $diachi, 'SDT' => $sdt, 'DienTich' => $dientich, 'SoLuongPhong' => $soluong, 'TinhThanh' => $tinh, 'QuanHuyen' => $quan, 'MoTa' => $mota);
+
+        $this->db->where('MaNT', $mant);
+        $this->db->update('nhatro', $data); 
+    }
+
+    function updateToaDo($mant, $vido, $kinhdo)
+    {
+        $data = array('ViDo' => $vido, 'KinhDo' => $kinhdo);
 
         $this->db->where('MaNT', $mant);
         $this->db->update('nhatro', $data); 

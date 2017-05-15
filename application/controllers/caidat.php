@@ -111,6 +111,7 @@ class Caidat extends CI_Controller {
 	public function list_quan()
 	{
 		$matinh = $this->input->post('id');
+
 		$tinh = $this->restaurant_m->getQuan($matinh);
 		$tinh_select = '';
 		$tinh_select .= '<option value="">Chọn Quận/Huyện</option>';
@@ -132,6 +133,13 @@ class Caidat extends CI_Controller {
 	// 	$this->load->view('departments/list',$viewdata);
 	// 	$this->load->view('footer');
 	// }
+	public function update_toado()
+	{
+		$vido = $this->input->post('vd');
+		$kinhdo = $this->input->post('kd');
+		$this->restaurant_m->updateToaDo(UID, $vido, $kinhdo);
+
+	}
 	public function index()
 	{
 		
@@ -143,10 +151,10 @@ class Caidat extends CI_Controller {
 			$new_soluong = $this->input->post("soluong");
 			$new_tinh = $this->input->post("tinhthanh");
 			$new_quan = $this->input->post("quanhuyen");
-			$new_toado = $this->input->post('data');
+			
 			$new_mota = $this->input->post('mota');
 
-			$this->restaurant_m->updateNhatro(UID, $new_diachi, $new_sdt, $new_dientich, $new_soluong, $new_tinh, $new_quan, $new_toado, $new_mota);
+			$this->restaurant_m->updateNhatro(UID, $new_diachi, $new_sdt, $new_dientich, $new_soluong, $new_tinh, $new_quan, $new_mota);
 			redirect("/room");	
 		}
 		//$cp = $this->sport_facility_m ->get_phi();

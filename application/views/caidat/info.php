@@ -77,14 +77,14 @@
                                  <div id="image_preview"></div>
                                 </div>
                         </div> <!-- /field -->
-                        <div class="form-group" style="margin-top: 20px;">
+                        <div class="field" style="margin-top: 20px;">
                             <label for="mota"><strong>Mô tả chi tiết nhà trọ</strong></label>
-                            <textarea type="text" id="mota" name="mota" rows="10" value="<?=$nhatro->MoTa ?>" maxlength="500" style="width: 100%;" /></textarea>
+                            <textarea type="text" id="mota" name="mota" rows="10" maxlength="500" style="width: 100%;" /><?=$nhatro->MoTa ?></textarea>
                         </div> 
                     </div>
                    <div class="login-actions">
                     
-                        <button class="button btn btn-success btn-large">Lưu</button>
+                        <button id="luu" class="button btn btn-success btn-large">Lưu</button>
                     
                     </div> <!-- .actions -->
                 </div>
@@ -120,14 +120,20 @@
       // This example requires the Places library. Include the libraries=places
       // parameter when you first load the API. For example:
       // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
-
+      var currentLocation;
+      var marker;
+      var myLatLng = {lat: <?=$nhatro->ViDo ?>, lng: <?=$nhatro->KinhDo ?>};
       function initAutocomplete() {
         var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -33.8688, lng: 151.2195},
-          zoom: 13,
+          center: myLatLng,
+          zoom: 15,
           mapTypeId: 'roadmap'
         });
-
+        marker = new google.maps.Marker({
+                    position: myLatLng,
+                    map: map,
+                    //draggable: true //make it draggable
+                });
         // Create the search box and link it to the UI element.
         var input = document.getElementById('diachi');
         var searchBox = new google.maps.places.SearchBox(input);
@@ -188,14 +194,14 @@
           map.fitBounds(bounds);
 
         });
-        var marker;
+        
         //Listen for any clicks on the map.
         google.maps.event.addListener(map, 'click', function(event) {                
             //Get the location that the user clicked.
             var clickedLocation = event.latLng;
             var latitude = event.latLng.lat();
             var longitude = event.latLng.lng();
-            console.log( latitude + ', ' + longitude );
+            //console.log( latitude + ', ' + longitude );
             //If the marker hasn't been added.
             if(marker == undefined){
                 //Create the marker.
@@ -216,14 +222,22 @@
 
         function markerLocation(){
             //Get location.
-            var currentLocation = marker.getPosition();
-            //Add lat and lng values to a field that we can save.
-            
-            $.post('<?php echo site_url('caidat/index'); ?>',{data:currentLocation},function(html){alert(html);});  
-
-            // document.getElementById('lat').value = currentLocation.lat(); //latitude
-            // document.getElementById('lng').value = currentLocation.lng(); //longitude
-        }
+            currentLocation = marker.getPosition();
+           
+            $.ajax({
+                type: "POST",
+                url: "<?php echo site_url('caidat/update_toado'); ?>",
+                data: {vd: currentLocation.lat(), kd: currentLocation.lng()},
+                //dataType: 'json',
+                success:function(data){
+                    //$('#quanhuyen').html(data);
+                    //$('#city').html('<option value="0">Select City</option>');
+                    //$('#state').append('<option value="' + id + '">' + name + '</option>');
+                    //console.log('Ok: dt');
+                    //alert('ok');
+                }
+            });
+        };
       }
 
     </script>
@@ -250,7 +264,28 @@
             });
         });
     </script>
-
+    <!-- <script type="text/javascript">
+        $(document).ready(function(){
+            $('#luu').on('click', function(){
+                var curLoc = currentLocation;
+                //console.log();
+                //alert(curLoc.lat() + ', ' + curLoc.lng());
+                $.ajax({
+                    type: "POST",
+                    url: "<?php echo site_url('caidat'); ?>",
+                    data: {vd: curLoc.lat(), kd: curLoc.lng()},
+                    //dataType: 'json',
+                    success:function(data){
+                        //$('#quanhuyen').html(data);
+                        //$('#city').html('<option value="0">Select City</option>');
+                        //$('#state').append('<option value="' + id + '">' + name + '</option>');
+                        //console.log('Ok: dt');
+                        //alert('ok');
+                    }
+                });
+            });
+        });
+    </script> -->
 
     <!-- jQuery read image data and show preview code -->
 <!--     <script type="text/javascript">

@@ -525,3 +525,14 @@ ERROR - 2017-05-14 14:17:50 --> Severity: Warning  --> Creating default object f
 ERROR - 2017-05-14 14:17:50 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
 ERROR - 2017-05-14 14:17:50 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
 ERROR - 2017-05-14 14:17:50 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-14 14:44:57 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-14 14:44:57 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-14 14:44:57 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-14 14:44:57 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-14 14:44:57 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-14 14:44:57 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-14 14:44:57 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-14 14:44:57 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-14 14:44:57 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-14 14:44:57 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-14 17:32:24 --> Severity: Notice  --> Undefined variable: error C:\xampp\htdocs\hotel\application\views\login.php 11
