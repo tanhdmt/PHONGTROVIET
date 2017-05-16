@@ -38,7 +38,7 @@
 
 				<div class="field">
 					<label for="songuoi">Ghi chú:</label>
-					<textarea rows="4" id="ghichu" name="ghichu" value="<?=$department->GhiChu?>" value="" placeholder=""></textarea>
+					<textarea rows="4" id="ghichu" name="ghichu" value="<?=$department->GhiChu?>" value="" maxlength="200" placeholder=""></textarea>
 				</div> 
 
 				

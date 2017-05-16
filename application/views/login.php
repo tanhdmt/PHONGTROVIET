@@ -16,12 +16,12 @@
 				
 				<div class="field">
 					<label for="username">Username</label>
-					<input type="text" id="username" autocomplete="off" required name="username" value="" placeholder="Username" class="login username-field" />
+					<input type="text" id="username" maxlength="30" autocomplete="off" required name="username" value="" placeholder="Username" class="login username-field" />
 				</div> <!-- /field -->
 				
 				<div class="field">
 					<label for="password">Password:</label>
-					<input type="password" id="password" autocomplete="off" required name="password" value="" placeholder="Password" class="login password-field"/>
+					<input type="password" id="password" maxlength="30" autocomplete="off" required name="password" value="" placeholder="Password" class="login password-field"/>
 				</div> <!-- /password -->
 				
 			</div> <!-- /login-fields -->

@@ -123,7 +123,10 @@
       var currentLocation;
       var marker;
       var myLatLng = {lat: <?=$nhatro->ViDo ?>, lng: <?=$nhatro->KinhDo ?>};
+      //console.log(<?=$nhatro->ViDo ?>);
+        //var myLatLng = {lat: -34.397, lng:150.644};
       function initAutocomplete() {
+       
         var map = new google.maps.Map(document.getElementById('map'), {
           center: myLatLng,
           zoom: 15,
@@ -155,10 +158,10 @@
           }
 
           // Clear out the old markers.
-          markers.forEach(function(marker) {
-            marker.setMap(null);
-          });
-          markers = [];
+          // markers.forEach(function(marker) {
+          //   marker.setMap(null);
+          // });
+          // markers = [];
 
           
           // For each place, get the icon, name and location.
@@ -177,12 +180,13 @@
             };
 
             // Create a marker for each place.
-            markers.push(new google.maps.Marker({
-              map: map,
-              icon: icon,
-              title: place.name,
-              position: place.geometry.location
-            }));
+            // markers.push(new google.maps.Marker({
+            //   map: map,
+            //   icon: icon,
+            //   title: place.name,
+            //   position: place.geometry.location
+            // }));
+            
 
             if (place.geometry.viewport) {
               // Only geocodes have viewport.
@@ -236,6 +240,7 @@
                     //console.log('Ok: dt');
                     //alert('ok');
                 }
+                
             });
         };
       }
@@ -246,24 +251,29 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="<?php echo base_url(); ?>js/jquery.form.js"></script>
     <script type="text/javascript">
-        $(document).ready(function(){
-            $('#tinhthanh').on('change', function(){
-                var tinh_id = $(this).val();
-                //$("#state > option").remove();
-                $.ajax({
-                    type: "POST",
-                    url: "<?php echo site_url('caidat/list_quan'); ?>",
-                    data: {id: tinh_id},
-                    dataType: 'json',
-                    success:function(data){
+         $(document).ready(function(){
+             $('#tinhthanh').on('click', function(){
+                 var tinh_id = $(this).val();
+                 //console.log(tinh_id);
+                 //$("#state > option").remove();
+                 $.ajax({
+                     type: "POST",
+                     url: "<?php echo site_url('caidat/list_quan'); ?>",
+                     data: {id: tinh_id},
+                     dataType: 'json',
+                     success:function(data){
                         $('#quanhuyen').html(data);
-                        //$('#city').html('<option value="0">Select City</option>');
-                        //$('#state').append('<option value="' + id + '">' + name + '</option>');
+                         //$('#city').html('<option value="0">Select City</option>');
+                         //$('#state').append('<option value="' + id + '">' + name + '</option>');
+                     },
+                     error: function(xhr, status, error) {
+                      var err = eval("(" + xhr.responseText + ")");
+                      alert(err.Message);
                     }
-                });
-            });
-        });
-    </script>
+                 });
+             });
+         });
+     </script>
     <!-- <script type="text/javascript">
         $(document).ready(function(){
             $('#luu').on('click', function(){

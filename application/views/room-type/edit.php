@@ -10,12 +10,12 @@
 
 				<div class="field">
 					<label for="room_type">Loại phòng:</label>
-					<input type="text" id="type" name="type" required value="<?=$room_type->TenLoaiPhong?>" placeholder="" readonly/>
+					<input type="text" id="type" name="type" required value="<?=$room_type->TenLoaiPhong?>" maxlength="50" placeholder="" readonly/>
 				</div> <!-- /field -->
 				
 				<div class="field">
 					<label for="room_price">Giá phòng:</label>
-					<input type="number" min="1" id="price" name="price" required value="<?=$room_type->GiaPhong?>" placeholder=""/>
+					<input type="number" min="1" id="price" name="price" required value="<?=$room_type->GiaPhong?>" maxlength="20" placeholder=""/>
 					<i icon="icon-dollar"></i>
 				</div> <!-- /field -->
 

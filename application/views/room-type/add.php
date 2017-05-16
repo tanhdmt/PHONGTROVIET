@@ -15,12 +15,12 @@
 
 				<div class="field">
 					<label for="room_type">Loại Phòng:</label>
-					<input type="text" id="type" name="type" required value="" placeholder="Tên loại phòng"/>
+					<input type="text" id="type" name="type" required value="" maxlength="50" placeholder="Tên loại phòng"/>
 				</div> <!-- /field -->
 				
 				<div class="field">
 					<label for="room_price">Giá phòng:</label>
-					<input type="number" min="1" id="price" name="price" required value="" placeholder="Giá phòng"/>
+					<input type="number" min="1" id="price" name="price" required value="" maxlength="20" placeholder="Giá phòng"/>
 					<i icon="icon-dollar"></i>
 				</div> <!-- /field -->
 

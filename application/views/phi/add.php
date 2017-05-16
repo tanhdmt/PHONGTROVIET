@@ -10,12 +10,12 @@
 
 				<div class="field">
 					<label for="department_name">Tên phí:</label>
-					<input type="text" id="tenphi" name="tenphi" required value="" placeholder=""/>
+					<input type="text" id="tenphi" name="tenphi" required value="" maxlength="30" placeholder=""/>
 				</div> <!-- /field -->
 				
 				<div class="field">
 					<label for="department_budget">Đơn giá:</label>
-					<input type="text" id="dongia" name="dongia" required value="" placeholder=""/>
+					<input type="text" id="dongia" name="dongia" required value="" maxlength="11" placeholder=""/>
 				</div> <!-- /password -->
 
 			</div> <!-- /login-fields -->

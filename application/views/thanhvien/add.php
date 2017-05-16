@@ -10,17 +10,17 @@
 
 				<div class="field">
 					<label for="employee_username">Tên thành viên:</label>
-					<input type="text" id="tentv" name="tentv" required value="" placeholder=""/>
+					<input type="text" id="tentv" name="tentv" maxlength="50" required value="" placeholder=""/>
 				</div> <!-- /field -->
 				
 				<div class="field">
 					<label for="password">Số điện thoại:</label>
-					<input type="text" id="sdt" name="sdt" value="" placeholder=""/>
+					<input type="text" id="sdt" name="sdt" maxlength="20" value="" placeholder=""/>
 				</div> <!-- /password -->
 
 				<div class="field">
 					<label for="employee_firstname">Số CMND:</label>
-					<input type="text" id="cmnd" name="cmnd" value="" placeholder=""/>
+					<input type="text" id="cmnd" name="cmnd" maxlength="9" value="" placeholder=""/>
 				</div> <!-- /field -->
 
 				<div class="field">

@@ -38,7 +38,7 @@
 										<td><input type="number" min="<?=$diencu->ChiSoMoi ?>" id="moidien" name="moidien" required value="<?=$dien->ChiSoMoi ?>" placeholder=""/></td>
 									<? } else {?>
 										<td><input type="number" id="cudien" name="cudien" required value="0" readonly placeholder=""/></td>
-										<td><input type="number" id="moidien" name="moidien" required value="<?=$dien->ChiSoMoi ?>" placeholder=""/></td>
+										<td><input type="number" id="moidien" name="moidien" required value="<?=$dien->ChiSoMoi ?>" maxlength="10" placeholder=""/></td>
 									<?}?>
 									
 									<td><input type="text" id="thanhtien" name="thanhtien" value="<?=$cp->DonGia*($dien->ChiSoMoi-$dien->ChiSoCu) ?>" placeholder="" readonly style="border:none;border-color: transparent; background-color: transparent;"/></td>
@@ -49,7 +49,7 @@
 										<td><input type="number"  min="<?=$nuoccu->ChiSoMoi ?>" id="moinuoc" name="moinuoc" required value="<?=$nuoc->ChiSoMoi ?>" placeholder=""/></td>
 									<? } else {?>
 										<td><input type="number"  id="cunuoc" name="cunuoc" required value="0" readonly placeholder=""/></td>
-										<td><input type="number"  id="moinuoc" name="moinuoc" required value="<?=$nuoc->ChiSoMoi ?>" placeholder=""/></td>
+										<td><input type="number"  id="moinuoc" name="moinuoc" required value="<?=$nuoc->ChiSoMoi ?>" maxlength="10" placeholder=""/></td>
 									<?}?>
 									
 									<td> <input type="text" id="thanhtien" name="thanhtien" value="<?=$cp->DonGia*($nuoc->ChiSoMoi-$nuoc->ChiSoCu) ?>" placeholder="" readonly style="border:none;border-color: transparent; background-color: transparent;"/></td>

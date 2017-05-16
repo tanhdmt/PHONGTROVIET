@@ -17,11 +17,24 @@ class Register extends CI_Controller {
 				$diachi = null;
 				$sdt = null;
 				$soluongphong = null;
+				$vido = "-34.397";
+				$kinhdo = "150.644";
 				
-				$this->user_m->add_user($username, $password, $tennt, $diachi, $sdt, $soluongphong);
-				$error_message = "";
-				$success_message = "Bạn đã đăng ký thành công!";
-				$viewdata = array('success_message' => $success_message);
+
+				$count = $this->user_m->add_user($username, $password, $tennt, $diachi, $sdt, $soluongphong, $vido, $kinhdo);
+				//echo $count;
+				if($count == 1)
+				{
+					$error_message = "";
+					$success_message = "Bạn đã đăng ký thành công!";
+					$viewdata = array('success_message' => $success_message);
+				}
+				else
+				{
+					$error_message = "Đăng ký không thành công";
+					$viewdata = array('error_message' => $error_message);
+				}
+				
 			}
 
 		}

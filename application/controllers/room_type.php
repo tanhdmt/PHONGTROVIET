@@ -34,13 +34,13 @@ class Room_type extends CI_Controller {
 
 			$type = $this->input->post("type");
 			$price = $this->input->post("price");
-			if(count($this->room_m->getRoomTypeName($type))==0) {
+			//if(count($this->room_m->getRoomTypeName($type))==0) {
 				$this->room_m->addRoomType($type, $price, UID);
 				redirect("/room-type");
-			}
-			else {
-				$viewdata['error'] = "Loại phòng đã tồn tại";
-			}
+			//}
+			// else {
+			// 	$viewdata['error'] = "Loại phòng đã tồn tại";
+			// }
 		}
 
 		$data = array('title' => 'Thêm loại phòng - PHÒNG TRỌ VIỆT', 'page' => 'room-type');

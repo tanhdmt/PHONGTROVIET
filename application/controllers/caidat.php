@@ -111,16 +111,15 @@ class Caidat extends CI_Controller {
 	public function list_quan()
 	{
 		$matinh = $this->input->post('id');
-
-		$tinh = $this->restaurant_m->getQuan($matinh);
-		$tinh_select = '';
-		$tinh_select .= '<option value="">Chọn Quận/Huyện</option>';
-		foreach ($tinh as $t) {
-			$tinh_select .= '<option value="'.$t->districid.'">'.$t->type.' '.$t->name.'</option>';
-			//echo $tinh_select;
-		}
-		
-		echo(json_encode($tinh_select));
+ 		$tinh = $this->restaurant_m->getQuan($matinh);
+ 		$tinh_select = '';
+ 		$tinh_select .= '<option value="">Chọn Quận/Huyện</option>';
+ 		foreach ($tinh as $t) {
+ 			$tinh_select .= '<option value="'.$t->districtid.'">'.$t->type.' '.$t->name.'</option>';
+ 			//echo $tinh_select;
+ 		}
+ 		
+ 		echo(json_encode($tinh_select));
 	}
 	// public function index()
 	// {

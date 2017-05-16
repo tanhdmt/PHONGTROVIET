@@ -16,7 +16,7 @@
 
 				<div class="field">
 					<label for="ten">Tên người thuê:</label>
-					<input type="text" id="nguoithue" name="nguoithue" required value="" placeholder=""/>
+					<input type="text" id="nguoithue" name="nguoithue" required value="" maxlength="50" placeholder=""/>
 				</div> 
 				
 				<div class="field">
@@ -27,7 +27,7 @@
 
 				<div class="field">
 					<label for="ghichu">Ghi chú:</label>
-					<input type="text" id="ghichu" name="ghichu" value="" placeholder="" style="height: 50px;"/>
+					<input type="text" id="ghichu" name="ghichu" value="" placeholder="" maxlength="200" style="height: 50px;"/>
 				</div> 
 
 			</div> <!-- /login-fields -->

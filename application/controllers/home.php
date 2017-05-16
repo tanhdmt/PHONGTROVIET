@@ -11,10 +11,47 @@ class Home extends CI_Controller {
         }
     }
 
+    public function get_nhatro()
+    {
+    	$nhatro = $this->restaurant_m->getNhatro1();
+    	echo(json_encode($nhatro));
+    }
+
+    public function get_nhatro_quan()
+    {
+    	$maquan = $this->input->post('quanid');
+    	$ntquan = $this->restaurant_m->getNhatro2($maquan);
+    	echo(json_encode($ntquan));
+    }
+
+    public function list_quan()
+	{
+		$matinh = $this->input->post('id');
+
+		$tinh = $this->restaurant_m->getQuan($matinh);
+		$tinh_select = '';
+		$tinh_select .= '<option value="">Chọn Quận/Huyện</option>';
+		foreach ($tinh as $t) {
+			$tinh_select .= '<option value="'.$t->districtid.'">'.$t->type.' '.$t->name.'</option>';
+			//echo $tinh_select;
+		}
+		
+		echo(json_encode($tinh_select));
+	}
+
+	public function get_khuvuc()
+	{
+		$maquan = $this->input->post('quanid');
+		$quan = $this->restaurant_m->getToadoquan($maquan);
+		echo(json_encode($quan[0]));
+	}
+
     public function index() {
         $this->check_login();
 
-        $viewdata = array();
+        $nhatro = $this->restaurant_m->getNhatro1();
+        $tinh = $this->restaurant_m->getTinh();
+        $viewdata = array('nhatro' => $nhatro, 'tinh' => $tinh);
 
         // if ($this->input->post("username") && $this->input->post("password")) {
         //     $username = $this->input->post("username");
@@ -26,6 +63,7 @@ class Home extends CI_Controller {
         //         $viewdata["error"] = true;
         //     }
         // }
+
         $data = array('title' => 'Homepage - PHÒNG TRỌ VIỆT', 'page' => 'home');
         $this->load->view('header', $data);
         $this->load->view('home', $viewdata);

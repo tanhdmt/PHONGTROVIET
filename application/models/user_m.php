@@ -26,11 +26,11 @@ class User_m extends CI_Model {
         return false;
     }
 
-    function add_user($username, $password, $tennt, $diachi, $sdt, $soluongphong)
+    function add_user($username, $password, $tennt, $diachi, $sdt, $soluongphong, $vido, $kinhdo)
     {
-        $data = array('Username' => $username, 'Password' => $password, 'TenNT' => $tennt, 'DiaChi' => $diachi, 'SDT' => $sdt, 'SoLuongPhong' => $soluongphong);
+        $data = array('Username' => $username, 'Password' => $password, 'TenNT' => $tennt, 'DiaChi' => $diachi, 'SDT' => $sdt, 'SoLuongPhong' => $soluongphong, 'ViDo' => $vido, 'KinhDo' => $kinhdo);
         $this->db->insert('nhatro', $data);
-        //return $this->db->affected_rows();
+        return $this->db->affected_rows();
     }
 
     

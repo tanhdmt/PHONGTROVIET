@@ -15,6 +15,34 @@ class Restaurant_m extends CI_Model {
         
     } 
 
+    function getNhatro1()
+    {
+        $query = $this->db->query('select nhatro.MaNT, TenNT, DiaChi, SDT, SoLuongPhong, TinhThanh, QuanHuyen, ViDo, KinhDo, DienTich, HinhAnh, min(GiaPhong) as GiaPhong FROM `nhatro`, phongtro, loaiphong where nhatro.MaNT=phongtro.MaNT and loaiphong.MaLoaiPhong = phongtro.MaLoaiPhong and TinhTrang=\'Trống\' group by TenNT');
+        $data = array();
+
+        foreach (@$query->result() as $row)
+        {
+            $data[] = $row;
+        }
+        if(count($data))
+            return $data;
+        return false;
+    } 
+
+    function getNhatro2($maquan)
+    {
+        $query = $this->db->query('select nhatro.MaNT, TenNT, DiaChi, SDT, SoLuongPhong, TinhThanh, QuanHuyen, ViDo, KinhDo, DienTich, HinhAnh, min(GiaPhong) as GiaPhong FROM `nhatro`, phongtro, loaiphong where nhatro.MaNT=phongtro.MaNT and loaiphong.MaLoaiPhong = phongtro.MaLoaiPhong and TinhTrang=\'Trống\' and QuanHuyen=\''.$maquan.'\' group by TenNT');
+        $data = array();
+
+        foreach (@$query->result() as $row)
+        {
+            $data[] = $row;
+        }
+        if(count($data))
+            return $data;
+        return false;
+    } 
+
     function getTinh()
     {
         $query = $this->db->from('province')->get();
@@ -32,6 +60,12 @@ class Restaurant_m extends CI_Model {
     function getQuan($matinh)
     {
         $query = $this->db->get_where('district', array('provinceid' => $matinh));
+        return $query->result();
+    }
+
+    function getToadoquan($maquan)
+    {
+        $query = $this->db->query('select districtid, province.provinceid, province.name as Tinh, district.name as Quan, district.type as Type from province, district where province.provinceid = district.provinceid and districtid=\''.$maquan.'\'');
         return $query->result();
     }
 

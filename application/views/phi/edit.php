@@ -15,7 +15,7 @@
 				
 				<div class="field">
 					<label for="department_budget">Đơn giá:</label>
-					<input type="text" id="dongia" name="dongia" required value="<?=$cp->DonGia?>" placeholder=""/>
+					<input type="text" id="dongia" name="dongia" required value="<?=$cp->DonGia?>" maxlength="11" placeholder=""/>
 				</div> <!-- /password -->
 
 			</div> <!-- /login-fields -->
