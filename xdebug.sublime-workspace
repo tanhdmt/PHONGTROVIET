@@ -4,20 +4,108 @@
 		"selected_items":
 		[
 			[
-				"Ngay",
-				"NgayThue"
+				"console",
+				"console.log"
 			],
 			[
-				"texta",
-				"text-align"
-			],
-			[
-				"pad",
-				"padding-left"
+				"content",
+				"contentTimkiem"
 			],
 			[
 				"mar",
+				"margin-top"
+			],
+			[
+				"ma",
+				"$maquan〔variable〕"
+			],
+			[
+				"quan",
+				"quan_id"
+			],
+			[
+				"tinh",
+				"tinh_id"
+			],
+			[
+				"conso",
+				"console.log"
+			],
+			[
+				"vid",
+				"$vido〔variable〕"
+			],
+			[
+				"cur",
+				"curLoc〔variable〕"
+			],
+			[
+				"ale",
+				"alert〔function〕"
+			],
+			[
+				"marker",
+				"markerLocation"
+			],
+			[
+				"new",
+				"$new_toado〔variable〕"
+			],
+			[
+				"curr",
+				"currentLocation"
+			],
+			[
+				"margi",
 				"margin-left"
+			],
+			[
+				"form",
+				"form-group"
+			],
+			[
+				"texta",
+				"textarea\tTag"
+			],
+			[
+				"pad",
+				"padding-bottom"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"image",
+				"image_preview"
+			],
+			[
+				"ima",
+				"$image_arr〔variable〕"
+			],
+			[
+				"o",
+				"on〔function〕"
+			],
+			[
+				"pos",
+				"post"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"in",
+				"input\tTag"
+			],
+			[
+				"tetx",
+				"text-align"
+			],
+			[
+				"Ngay",
+				"NgayThue"
 			],
 			[
 				"Ma",
@@ -26,10 +114,6 @@
 			[
 				"max",
 				"maxlength\tAttr"
-			],
-			[
-				"ma",
-				"$mant〔variable〕"
 			],
 			[
 				"thanh",
@@ -68,10 +152,6 @@
 				"text-align"
 			],
 			[
-				"new",
-				"$new_dongia〔variable〕"
-			],
-			[
 				"te",
 				"$tentv〔variable〕"
 			],
@@ -86,10 +166,6 @@
 			[
 				"dis",
 				"display: 〔property〕"
-			],
-			[
-				"wid",
-				"width: 〔property〕"
 			],
 			[
 				"table",
@@ -240,28 +316,10 @@
 	"buffers":
 	[
 		{
-			"file": "application/views/room/list.php",
-			"settings":
-			{
-				"buffer_size": 2680,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "application/views/thanhvien/info.php",
 			"settings":
 			{
-				"buffer_size": 5127,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "application/controllers/home.php",
-			"settings":
-			{
-				"buffer_size": 1185,
+				"buffer_size": 5036,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -288,7 +346,7 @@
 			"file": "application/views/room/edit1.php",
 			"settings":
 			{
-				"buffer_size": 1687,
+				"buffer_size": 1703,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -312,19 +370,10 @@
 			}
 		},
 		{
-			"file": "application/controllers/phi.php",
+			"file": "/C/xampp/htdocs/PHONGTROVIET/application/views/hoadon/edit.php",
 			"settings":
 			{
-				"buffer_size": 2848,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "application/models/sport_facility_m.php",
-			"settings":
-			{
-				"buffer_size": 2080,
+				"buffer_size": 7702,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -339,10 +388,19 @@
 			}
 		},
 		{
+			"file": "application/controllers/phi.php",
+			"settings":
+			{
+				"buffer_size": 2848,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "application/views/hoadon/edit.php",
 			"settings":
 			{
-				"buffer_size": 7507,
+				"buffer_size": 7702,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -351,16 +409,7 @@
 			"file": "application/controllers/room_type.php",
 			"settings":
 			{
-				"buffer_size": 2564,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "application/views/header.php",
-			"settings":
-			{
-				"buffer_size": 4912,
+				"buffer_size": 2577,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -383,6 +432,69 @@
 			}
 		},
 		{
+			"file": "application/views/login.php",
+			"settings":
+			{
+				"buffer_size": 1687,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/views/thanhvien/add.php",
+			"settings":
+			{
+				"buffer_size": 1351,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/views/thanhvien/edit.php",
+			"settings":
+			{
+				"buffer_size": 1866,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/views/room-type/add.php",
+			"settings":
+			{
+				"buffer_size": 1386,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/views/room-type/edit.php",
+			"settings":
+			{
+				"buffer_size": 1277,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/views/room/edit.php",
+			"settings":
+			{
+				"buffer_size": 1702,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/views/room/chothue.php",
+			"settings":
+			{
+				"buffer_size": 1371,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "application/views/phi/list.php",
 			"settings":
 			{
@@ -392,28 +504,28 @@
 			}
 		},
 		{
-			"file": "application/models/room_m.php",
-			"settings":
-			{
-				"buffer_size": 6795,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "application/controllers/room.php",
-			"settings":
-			{
-				"buffer_size": 5631,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "application/views/room/history.php",
 			"settings":
 			{
 				"buffer_size": 1351,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/views/phi/add.php",
+			"settings":
+			{
+				"buffer_size": 901,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/views/phi/edit.php",
+			"settings":
+			{
+				"buffer_size": 941,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -428,39 +540,127 @@
 			}
 		},
 		{
-			"file": "application/views/room/chothue.php",
+			"file": "/C/Users/Domiter/Downloads/Compressed/upload_multiple_images_using_jquery_ajax_php/upload_multiple_images_using_jquery_ajax_php/upload.php",
 			"settings":
 			{
-				"buffer_size": 1340,
+				"buffer_size": 1363,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "application/views/room/edit.php",
+			"file": "/C/xampp/htdocs/phongtro/application/controllers/Upload_files.php",
 			"settings":
 			{
-				"buffer_size": 1686,
+				"buffer_size": 2799,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/xampp/htdocs/phongtro/application/views/upload_files/index.html",
+			"settings":
+			{
+				"buffer_size": 1401,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Domiter/Downloads/Compressed/codeigniter_upload_multiple_files/codeigniter_upload_multiple_files/application/views/upload_files/index.php",
+			"settings":
+			{
+				"buffer_size": 2221,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/xampp/htdocs/codeigniter/application/controllers/Upload_files.php",
+			"settings":
+			{
+				"buffer_size": 1809,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/xampp/htdocs/phongtro/application/views/upload_files/index.php",
+			"settings":
+			{
+				"buffer_size": 2213,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "application/views/caidat/info.php",
+			"file": "index.php",
 			"settings":
 			{
-				"buffer_size": 546,
+				"buffer_size": 6491,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/controllers/home.php",
+			"settings":
+			{
+				"buffer_size": 2197,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/views/home.php",
+			"settings":
+			{
+				"buffer_size": 8643,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/models/restaurant_m.php",
+			"settings":
+			{
+				"buffer_size": 4519,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "application/controllers/caidat.php",
 			"settings":
 			{
-				"buffer_size": 2559,
+				"buffer_size": 4998,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/views/caidat/info.php",
+			"settings":
+			{
+				"buffer_size": 15086,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/controllers/register.php",
+			"settings":
+			{
+				"buffer_size": 1436,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/models/user_m.php",
+			"settings":
+			{
+				"buffer_size": 1485,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
 			}
 		},
 		{
@@ -479,24 +679,6 @@
 				"buffer_size": 3569,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "application/models/user_m.php",
-			"settings":
-			{
-				"buffer_size": 1433,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "application/controllers/register.php",
-			"settings":
-			{
-				"buffer_size": 1173,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
 			}
 		},
 		{
@@ -524,15 +706,6 @@
 				"buffer_size": 2134,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "#",
-			"settings":
-			{
-				"buffer_size": 1,
-				"line_ending": "Windows",
-				"name": "#"
 			}
 		}
 	],
@@ -583,15 +756,45 @@
 		"/C/xampp/htdocs/hotel/application/libraries",
 		"/C/xampp/htdocs/hotel/application/models",
 		"/C/xampp/htdocs/hotel/application/views",
+		"/C/xampp/htdocs/hotel/application/views/caidat",
 		"/C/xampp/htdocs/hotel/application/views/hoadon",
-		"/C/xampp/htdocs/hotel/application/views/phi",
-		"/C/xampp/htdocs/hotel/application/views/room",
-		"/C/xampp/htdocs/hotel/application/views/thanhvien",
+		"/C/xampp/htdocs/hotel/application/views/room-type",
 		"/C/xampp/htdocs/hotel/css",
 		"/C/xampp/htdocs/hotel/css/pages"
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/hotel/application/views/header.php",
+		"/C/xampp/htdocs/hotel/application/controllers/room.php",
+		"/C/xampp/htdocs/hotel/application/models/sport_facility_m.php",
+		"/C/xampp/htdocs/hotel/application/controllers/phi.php",
+		"/C/xampp/htdocs/hotel/application/models/restaurant_m.php",
+		"/C/xampp/htdocs/hotel/application/models/user_m.php",
+		"/C/xampp/htdocs/hotel/application/controllers/register.php",
+		"/C/Users/Domiter/Downloads/Compressed/upload_multiple_images_using_jquery_ajax_php/upload_multiple_images_using_jquery_ajax_php/index.html",
+		"/C/xampp/htdocs/phongtro/application/models/File.php",
+		"/C/xampp/htdocs/hotel/application/views/room/chothue.php",
+		"/C/xampp/htdocs/hotel/application/views/room/edit.php",
+		"/C/xampp/htdocs/codeigniter/application/views/upload_files/index.php",
+		"/C/xampp/htdocs/phongtro/application/controllers/Upload_files.php",
+		"/C/xampp/htdocs/phongtro/application/config/database.php",
+		"/C/xampp/htdocs/phongtro/system/database/DB.php",
+		"/C/xampp/htdocs/phongtro/.htaccess",
+		"/C/xampp/htdocs/phongtro/index.php",
+		"/C/xampp/htdocs/codeigniter/application/config/autoload.php",
+		"/C/xampp/htdocs/phongtro/application/config/config.php",
+		"/C/xampp/htdocs/codeigniter/application/models/File.php",
+		"/C/xampp/htdocs/hotel/upload.php",
+		"/C/xampp/htdocs/hotel/application/views/room/list.php",
+		"/C/Users/Domiter/Downloads/Compressed/upload_multiple_images_using_jquery_ajax_php/upload_multiple_images_using_jquery_ajax_php/style.css",
+		"/C/Users/Domiter/Downloads/Compressed/upload_multiple_images_using_jquery_ajax_php/upload_multiple_images_using_jquery_ajax_php/jquery.form.js",
+		"/C/Users/Domiter/Downloads/Compressed/CodeIgniter-Multi-Upload-master/CodeIgniter-Multi-Upload-master/MY_Upload.php",
+		"/C/Users/Domiter/Downloads/Compressed/Database and View file/welcome_message.php",
+		"/C/xampp/htdocs/hotel/application/models/room_m.php",
+		"/C/xampp/htdocs/hotel/application/logs/log-2017-05-13.php",
+		"/C/xampp/htdocs/hotel/application/logs/log-2017-05-12.php",
+		"/C/xampp/htdocs/hotel/application/logs/log-2017-05-08.php",
+		"/C/xampp/htdocs/PHONGTROVIET/application/views/header.php",
 		"/C/xampp/htdocs/hotel/css/pages/signin.css",
 		"/C/xampp/htdocs/hotel/css/bootstrap.min.css",
 		"/C/xampp/htdocs/hotel/css/bootstrap.css",
@@ -607,9 +810,7 @@
 		"/C/xampp/htdocs/hotel/application/views/home.php",
 		"/C/xampp/htdocs/hotel/application/views/room/info.php",
 		"/C/xampp/htdocs/hotel/application/views/register.php",
-		"/C/xampp/htdocs/hotel/application/controllers/register.php",
 		"/C/xampp/htdocs/hotel/application/views/caidat/info",
-		"/C/xampp/htdocs/hotel/application/views/room/edit.php",
 		"/C/Users/Domiter/Downloads/Compressed/leaflet-searchable-map-template-master/leaflet-searchable-map-template-master/styles/custom.css",
 		"/C/xampp/htdocs/hotel/application/views/reservation/add.php",
 		"/C/xampp/htdocs/hotel/application/controllers/reservation.php",
@@ -619,7 +820,6 @@
 		"/C/xampp/htdocs/hotel/application/views/hoadon/add.php",
 		"/C/xampp/htdocs/hotel/system/database/DB_driver.php",
 		"/C/xampp/htdocs/hotel/application/views/departments/list.php",
-		"/C/xampp/htdocs/hotel/application/views/room/list.php",
 		"/C/xampp/htdocs/hotel/application/models/thanhvien_m.php",
 		"/C/xampp/htdocs/hotel/application/controllers/search.php",
 		"/C/xampp/htdocs/hotel/application/models/medical_service_m.php",
@@ -628,13 +828,7 @@
 		"/C/xampp/htdocs/hotel/application/views/thanhvien/edit.php",
 		"/C/xampp/htdocs/hotel/application/views/hoadon/list.php",
 		"/C/xampp/htdocs/hotel/application/views/footer.php",
-		"/C/xampp/htdocs/hotel/application/models/room_m.php",
-		"/C/xampp/htdocs/hotel/application/controllers/room.php",
 		"/C/xampp/htdocs/hotel/application/views/room/add.php",
-		"/C/xampp/htdocs/hotel/application/views/room/chothue.php",
-		"/C/xampp/htdocs/hotel/application/views/header.php",
-		"/C/xampp/htdocs/hotel/application/controllers/phi.php",
-		"/C/xampp/htdocs/hotel/application/models/sport_facility_m.php",
 		"/C/xampp/htdocs/hotel/application/models/departments_m.php",
 		"/C/xampp/htdocs/hotel/application/models/phi_m.php",
 		"/C/xampp/htdocs/hotel/application/models/employee_m.php",
@@ -650,7 +844,6 @@
 		"/C/Users/Domiter/Downloads/Compressed/hotel_management-master/hotel_management-master/application/controllers/room_type.php",
 		"/C/xampp/htdocs/hotel/application/views/employee/edit.php",
 		"/C/xampp/htdocs/hotel/Database/hotel.sql",
-		"/C/xampp/htdocs/hotel/application/models/user_m.php",
 		"/C/xampp/sport/inc/connect.inc.php",
 		"/C/xampp/htdocs/hotel/application/controllers/tugbadeneme.php",
 		"/C/xampp/htdocs/hotel/Xdebug Context",
@@ -698,23 +891,11 @@
 		"/C/Users/Domiter/Downloads/wp-config.php",
 		"/C/Users/Domiter/Downloads/dqt_database_dqt (2).sql",
 		"/C/Users/Domiter/Downloads/Compressed/AndroidLoginAndRegistration v2_2/AndroidLoginAndRegistration v2/android_login_api/db/database.sql",
-		"/C/wamp64/www/android_login_api/db/database.sql",
-		"/C/xampp/htdocs/hotel/application/core/index.html",
-		"/C/xampp/htdocs/phongtro/application/config/database.php",
-		"/C/Users/Domiter/AppData/Local/Temp/1-index.html",
-		"/C/xampp/htdocs/phongtro/application/index.html",
-		"/C/Users/Domiter/Downloads/Compressed/hotelmanagement-master/hotelmanagement-master/index.php",
-		"/C/xampp/htdocs/phongtro/system/database/index.html",
-		"/C/xampp/htdocs/phongtro/index.php",
-		"/C/Users/Domiter/Desktop/database.sql",
-		"/C/dqt_database_dqt.sql",
-		"/C/Users/Domiter/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
-		"/C/Users/Domiter/AppData/Roaming/Sublime Text 3/Packages/User/Emmet.sublime-settings",
-		"/C/Users/Domiter/Downloads/Compressed/Dir-master/FileExplorer/app/src/main/java/com/example/domiter/fileexplorer/MainActivity.java"
+		"/C/wamp64/www/android_login_api/db/database.sql"
 	],
 	"find":
 	{
-		"height": 43.0
+		"height": 58.0
 	},
 	"find_in_files":
 	{
@@ -728,6 +909,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			">\n",
+			"        }",
+			"initA",
+			"console",
+			"longitude",
+			"-->\n",
+			"\");\n",
+			"});\n",
 			"navbar-search",
 			"navbar-sea",
 			"updateTinh",
@@ -793,54 +982,24 @@
 	"groups":
 	[
 		{
-			"selected": 13,
+			"selected": 36,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "application/views/room/list.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2680,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2680,
-								2589
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1200.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "application/views/thanhvien/info.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5127,
+						"buffer_size": 5036,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5127,
-								5127
+								5036,
+								5036
 							]
 						],
 						"settings":
@@ -851,45 +1010,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1448.0,
+						"translation.y": 1780.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 32,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "application/controllers/home.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1185,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								953,
-								953
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"open_with_edit": true,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 21,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
+					"buffer": 1,
 					"file": "application/controllers/thanhvien.php",
 					"semi_transient": false,
 					"settings":
@@ -915,11 +1043,11 @@
 						"translation.y": 485.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 39,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 2,
 					"file": "application/models/departments_m.php",
 					"semi_transient": false,
 					"settings":
@@ -943,27 +1071,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 780.0,
+						"translation.y": 1480.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 3,
 					"file": "application/views/room/edit1.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1687,
+						"buffer_size": 1703,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1221,
-								1221
+								612,
+								612
 							]
 						],
 						"settings":
@@ -973,14 +1101,14 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 540.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 15,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 4,
 					"file": "application/models/phi_m.php",
 					"semi_transient": false,
 					"settings":
@@ -1007,11 +1135,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 26,
+					"stack_index": 41,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 5,
 					"file": "application/views/hoadon/info.php",
 					"semi_transient": false,
 					"settings":
@@ -1023,8 +1151,38 @@
 						"selection":
 						[
 							[
-								437,
-								483
+								1169,
+								1220
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 360.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 28,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/C/xampp/htdocs/PHONGTROVIET/application/views/hoadon/edit.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7702,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								7507
 							]
 						],
 						"settings":
@@ -1037,72 +1195,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 15,
+					"stack_index": 31,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
-					"file": "application/controllers/phi.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2848,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2198,
-								2198
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 425.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 22,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "application/models/sport_facility_m.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2080,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1031,
-								1031
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 480.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 23,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
+					"buffer": 7,
 					"file": "application/controllers/hoadon.php",
 					"semi_transient": false,
 					"settings":
@@ -1125,27 +1222,56 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 204.0,
+						"translation.y": 444.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 11,
-					"file": "application/views/hoadon/edit.php",
-					"semi_transient": false,
+					"buffer": 8,
+					"file": "application/controllers/phi.php",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 7507,
+						"buffer_size": 2848,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								815,
-								816
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1260.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "application/views/hoadon/edit.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7702,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3065,
+								3065
 							]
 						],
 						"settings":
@@ -1155,75 +1281,44 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2340.0,
+						"translation.y": 560.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "application/controllers/room_type.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2577,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1072,
+								1072
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 394.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 12,
-					"file": "application/controllers/room_type.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2564,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2163,
-								2474
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1414.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 18,
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "application/views/header.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4912,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1165,
-								1165
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 14,
+					"buffer": 11,
 					"file": "/C/xampp/htdocs/PHONGTROVIET/css/pages/signin.css",
 					"semi_transient": false,
 					"settings":
@@ -1248,11 +1343,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 38,
 					"type": "text"
 				},
 				{
-					"buffer": 15,
+					"buffer": 12,
 					"file": "application/views/register.php",
 					"semi_transient": false,
 					"settings":
@@ -1264,8 +1359,8 @@
 						"selection":
 						[
 							[
-								1477,
-								1477
+								772,
+								772
 							]
 						],
 						"settings":
@@ -1278,11 +1373,221 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 16,
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "application/views/login.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1687,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								802,
+								802
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 21,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "application/views/thanhvien/add.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1351,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								792,
+								792
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 20,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "application/views/thanhvien/edit.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1866,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								869,
+								869
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 19,
 					"type": "text"
 				},
 				{
 					"buffer": 16,
+					"file": "application/views/room-type/add.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1386,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								824,
+								824
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "application/views/room-type/edit.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1277,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								697,
+								697
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "application/views/room/edit.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1702,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1395,
+								1395
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 332.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "application/views/room/chothue.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1371,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1075,
+								1075
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
 					"file": "application/views/phi/list.php",
 					"semi_transient": false,
 					"settings":
@@ -1312,68 +1617,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 17,
-					"file": "application/models/room_m.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6795,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5996,
-								5996
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2104.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 18,
-					"file": "application/controllers/room.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5631,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4218,
-								4218
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 2543.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 12,
-					"type": "text"
-				},
-				{
-					"buffer": 19,
+					"buffer": 21,
 					"file": "application/views/room/history.php",
 					"semi_transient": false,
 					"settings":
@@ -1404,7 +1648,67 @@
 					"type": "text"
 				},
 				{
-					"buffer": 20,
+					"buffer": 22,
+					"file": "application/views/phi/add.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 901,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								586,
+								586
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 23,
+					"file": "application/views/phi/edit.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 941,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								627,
+								627
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 24,
 					"file": "application/controllers/welcome.php",
 					"semi_transient": false,
 					"settings":
@@ -1430,24 +1734,54 @@
 						"translation.y": 360.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 17,
+					"stack_index": 33,
 					"type": "text"
 				},
 				{
-					"buffer": 21,
-					"file": "application/views/room/chothue.php",
+					"buffer": 25,
+					"file": "/C/Users/Domiter/Downloads/Compressed/upload_multiple_images_using_jquery_ajax_php/upload_multiple_images_using_jquery_ajax_php/upload.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1340,
+						"buffer_size": 1363,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								829,
-								829
+								6,
+								1360
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 30,
+					"type": "text"
+				},
+				{
+					"buffer": 26,
+					"file": "/C/xampp/htdocs/phongtro/application/controllers/Upload_files.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2799,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								750,
+								750
 							]
 						],
 						"settings":
@@ -1460,24 +1794,143 @@
 						"translation.y": 60.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 35,
 					"type": "text"
 				},
 				{
-					"buffer": 22,
-					"file": "application/views/room/edit.php",
+					"buffer": 27,
+					"file": "/C/xampp/htdocs/phongtro/application/views/upload_files/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1686,
+						"buffer_size": 1401,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1221,
-								1221
+								1000,
+								1000
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 36,
+					"type": "text"
+				},
+				{
+					"buffer": 28,
+					"file": "/C/Users/Domiter/Downloads/Compressed/codeigniter_upload_multiple_files/codeigniter_upload_multiple_files/application/views/upload_files/index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2221,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 540.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 37,
+					"type": "text"
+				},
+				{
+					"buffer": 29,
+					"file": "/C/xampp/htdocs/codeigniter/application/controllers/Upload_files.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1809,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 29,
+					"type": "text"
+				},
+				{
+					"buffer": 30,
+					"file": "/C/xampp/htdocs/phongtro/application/views/upload_files/index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2213,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1119,
+								1119
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 480.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 27,
+					"type": "text"
+				},
+				{
+					"buffer": 31,
+					"file": "index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6491,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1174,
+								1174
 							]
 						],
 						"settings":
@@ -1487,27 +1940,151 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 420.0,
+						"translation.y": 360.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 26,
 					"type": "text"
 				},
 				{
-					"buffer": 23,
-					"file": "application/views/caidat/info.php",
+					"buffer": 32,
+					"file": "application/controllers/home.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 546,
+						"buffer_size": 2197,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								400,
-								400
+								433,
+								433
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"open_with_edit": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 22,
+					"type": "text"
+				},
+				{
+					"buffer": 33,
+					"file": "application/views/home.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8643,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2397,
+								2397
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 781.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 34,
+					"file": "application/models/restaurant_m.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4519,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								909,
+								909
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 287.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 23,
+					"type": "text"
+				},
+				{
+					"buffer": 35,
+					"file": "application/controllers/caidat.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4998,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3278,
+								3278
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"open_with_edit": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2018.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 24,
+					"type": "text"
+				},
+				{
+					"buffer": 36,
+					"file": "application/views/caidat/info.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 15086,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9522,
+								9522
 							]
 						],
 						"settings":
@@ -1519,45 +2096,105 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2686.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 29,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 24,
-					"file": "application/controllers/caidat.php",
+					"buffer": 37,
+					"file": "application/controllers/register.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2559,
+						"buffer_size": 1436,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2243,
-								2243
+								1140,
+								1140
 							]
 						],
 						"settings":
 						{
 							"auto_complete": false,
-							"open_with_edit": true,
 							"syntax": "Packages/PHP/PHP.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1140.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 20,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
-					"buffer": 25,
+					"buffer": 37,
+					"file": "application/controllers/register.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1436,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								823,
+								823
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 38,
+					"file": "application/models/user_m.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1485,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1009,
+								1009
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 39,
 					"file": "application/models/customer_m.php",
 					"semi_transient": false,
 					"settings":
@@ -1584,11 +2221,11 @@
 						"translation.y": 1904.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 19,
+					"stack_index": 40,
 					"type": "text"
 				},
 				{
-					"buffer": 26,
+					"buffer": 40,
 					"file": "application/controllers/employee.php",
 					"semi_transient": false,
 					"settings":
@@ -1600,8 +2237,8 @@
 						"selection":
 						[
 							[
-								0,
-								3569
+								1158,
+								1158
 							]
 						],
 						"settings":
@@ -1614,72 +2251,11 @@
 						"translation.y": 664.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 30,
+					"stack_index": 34,
 					"type": "text"
 				},
 				{
-					"buffer": 27,
-					"file": "application/models/user_m.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1433,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1003,
-								1003
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 28,
-					"type": "text"
-				},
-				{
-					"buffer": 28,
-					"file": "application/controllers/register.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1173,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								882,
-								882
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 24,
-					"type": "text"
-				},
-				{
-					"buffer": 29,
+					"buffer": 41,
 					"file": "application/controllers/login.php",
 					"semi_transient": false,
 					"settings":
@@ -1706,11 +2282,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 27,
+					"stack_index": 42,
 					"type": "text"
 				},
 				{
-					"buffer": 30,
+					"buffer": 42,
 					"file": "application/controllers/departments.php",
 					"semi_transient": false,
 					"settings":
@@ -1736,11 +2312,11 @@
 						"translation.y": 778.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 31,
+					"stack_index": 43,
 					"type": "text"
 				},
 				{
-					"buffer": 31,
+					"buffer": 43,
 					"file": "application/views/customer/add.php",
 					"semi_transient": false,
 					"settings":
@@ -1765,7 +2341,7 @@
 						"translation.y": 60.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 32,
+					"stack_index": 44,
 					"type": "text"
 				}
 			]
@@ -1776,37 +2352,8 @@
 			]
 		},
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 32,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1,
-								1
-							]
-						],
-						"settings":
-						{
-							"auto_name": "#",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -2058,7 +2605,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 302.0,
+	"side_bar_width": 328.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

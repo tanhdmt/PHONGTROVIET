@@ -38,7 +38,7 @@
             </div>
             <h4 style="margin-top: 30px;"> Kết quả tìm kiếm</h4>
             <hr style="margin:0 0 10px 0;width: 100%; color: #b3b3b3; height: 1px; background-color:#b3b3b3;">
-            <div id="contentTimkiem">
+            <div id="contentTimkiem" class="pre-scrollable">
               
             </div>
             </div>
@@ -49,6 +49,7 @@
         </div>
       </div>
     </div>
+
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script>
       function initMap() {
@@ -103,12 +104,31 @@
                               //$('#quanhuyen').html(data);
                               //console.log(data);
                               $.each( data2, function( key, value ) {
-                                $( "#contentTimkiem" ).append( '<div id="content">' );
+                                if(value.HinhAnh!=null){
+                                  var images = (value.HinhAnh).split(',');
+                                  var path = "<?php echo base_url(); ?>" + images[0];
+                                  $( "#contentTimkiem" ).append("<div id='content' style='margin-top:20px; border: 1px solid #bfbfbf;'>\
+                                      <img src="+ path +" style='width:100%;height:150px'>\
+                                      <div id='bodyContent' style='padding:10px;'>\
+                                      <h3>Nhà trọ "+value.TenNT+"</h3>\
+                                      <p>" +value.DiaChi+"</p>\
+                                      <p>Số điện thoại:  <strong>" +value.SDT+"</strong></p>\
+                                      <span class='label label-success' style='font-size:13px;'> "+value.GiaPhong+"</span>\
+                                      </div>\
+                                      </div>");
+                                } else{
+                                  $( "#contentTimkiem" ).append("<div id='content' style='margin-top:20px; border: 1px solid #bfbfbf;'>\
+                                      <div id='bodyContent' style='padding:10px;'>\
+                                      <h3>Nhà trọ "+value.TenNT+"</h3>\
+                                      <p>" +value.DiaChi+"</p>\
+                                      <p>Số điện thoại:  <strong>" +value.SDT+"</strong></p>\
+                                      <span class='label label-success' style='font-size:13px;'> "+value.GiaPhong+"</span>\
+                                      </div>\
+                                      </div>");
+                                }
+
+
                                 
-                                $( "#contentTimkiem" ).append('<h3>Nhà trọ '+value.TenNT+'</h3>');
-                                $( "#contentTimkiem" ).append('<div id="bodyContent" >');
-                                $( "#contentTimkiem" ).append('<p>' +value.DiaChi+'</p>');
-                                $( "#contentTimkiem" ).append('<span class="label label-success" style="font-size:13px;"> '+value.GiaPhong+' </span></div></div>');
                               });
                               //$('#city').html('<option value="0">Select City</option>');
                               //$('#state').append('<option value="' + id + '">' + name + '</option>');
@@ -134,13 +154,29 @@
                     map: map
                   });
                   console.log(value.ViDo);
-                  var contentString =  '<div id="content" style="width: 300px; height:100px;">'+
+                  
+                  if(value.HinhAnh!=null){
+                    var images = (value.HinhAnh).split(',');
+                    var path = "<?php echo base_url(); ?>" + images[0];
+                    var contentString =  '<div id="content" style="width: 300px; height:250px;">'+
+                        '<img src='+ path +' style="width:300px;height:150px">'+
                         '<h3>Nhà trọ '+value.TenNT+'</h3>'+
                         '<div id="bodyContent" >'+
                         '<p>' +value.DiaChi+'</p>'+
                         '<span class="label label-success" style="font-size:13px;"> '+value.GiaPhong+' </span>'+
                         '</div>'+
                         '</div>';
+                  } else{
+                    var contentString =  '<div id="content" style="width: 300px; height:100px;">'+
+                        '<h3>Nhà trọ '+value.TenNT+'</h3>'+
+                        '<div id="bodyContent" >'+
+                        '<p>' +value.DiaChi+'</p>'+
+                        '<span class="label label-success" style="font-size:13px;"> '+value.GiaPhong+' </span>'+
+                        '</div>'+
+                        '</div>';
+                  }
+                  
+                  
 
                   
                   google.maps.event.addListener(marker,'click', (function(marker,contentString){ 

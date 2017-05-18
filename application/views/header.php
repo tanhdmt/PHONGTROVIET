@@ -19,6 +19,7 @@
   <script src="<?php echo base_url(); ?>js/plugins/purify.min.js" type="text/javascript"></script>
   <script src="<?php echo base_url(); ?>js/fileinput.min.js"></script>
 
+
 <!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdn.datatables.net/v/bs/jqc-1.12.4/dt-1.10.15/datatables.min.js"></script> -->
 

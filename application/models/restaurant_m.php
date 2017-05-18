@@ -85,6 +85,20 @@ class Restaurant_m extends CI_Model {
         $this->db->update('nhatro', $data); 
     }
 
+    function uploadImage($location, $mant)
+    {
+        $data = array('HinhAnh' => $location);
+
+        $this->db->where('MaNT', $mant);
+        $this->db->update('nhatro', $data); 
+    }
+
+    function getImage($mant)
+    {
+        $query = $this->db->query('select HinhAnh from nhatro where MaNT='.$mant);
+        return $query->result();
+    }
+
     function addRestaurant($restaurantName, $restaurantOpenTime, $restaurantCloseTime, $restaurantDetails, $tableCount)
     {
         $data = array('restaurant_name' => $restaurantName, 'restaurant_open_time' => $restaurantOpenTime, 'restaurant_close_time' => $restaurantCloseTime, 'restaurant_details' => $restaurantDetails, 'table_count' => $tableCount);

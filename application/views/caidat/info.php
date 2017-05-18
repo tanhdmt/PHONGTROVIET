@@ -2,7 +2,7 @@
   <div class="main-inner">
     <div class="container">
       <div class="row">
-          <form action="<?php echo base_url(); ?>caidat/index" method="post">
+          <form action="<?php echo base_url(); ?>caidat/index" method="post" enctype="multipart/form-data">
                 <h2 style="margin-left:30px;"><?="Cập nhật thông tin nhà trọ ".$nhatro->TenNT ?></h2>
 
                 <div class="span6">
@@ -17,7 +17,7 @@
                                 <div class="span3">
                                      <div class="form-group">
                                         <label for="tinh"><strong>Tỉnh/Thành phố</strong></label>
-                                        <select class="form-control" id="tinhthanh" name="tinhthanh">
+                                        <select class="form-control" id="tinhthanh" name="tinhthanh" required="">
                                         <option value="">Chọn Tỉnh/Thành phố</option>
                                         <?
                                             foreach ($tinh as $t) {
@@ -32,7 +32,7 @@
                                 <div class="span2">
                                     <div class="form-group">
                                         <label for="quan"><strong>Quận/Huyện</strong></label>
-                                        <select class="form-control" id="quanhuyen" name="quanhuyen">
+                                        <select class="form-control" id="quanhuyen" name="quanhuyen" required="">
                                             <option value="">Chọn Quận/Huyện</option>
                                         </select>
                                     </div> <!-- /field -->
@@ -70,11 +70,17 @@
                             <label for="hinhanh"><strong>Hình ảnh</strong></label>
                             <!-- HTML code for form element and preview image element -->
                             <div id="wrapper">
-                                 <form action="upload_file.php" method="post" enctype="multipart/form-data">
-                                  <input type="file" id="upload_file" name="upload_file[]" onchange="preview_image();" multiple/>
+                                  <input type="file" id="userFiles" name="userFiles[]" onchange="preview_image();" multiple/>
                                   <!-- <input type="submit" name='submit_image' value="Upload Image"/> -->
-                                 </form>
-                                 <div id="image_preview"></div>
+                                 <div id="image_preview">
+                                    <?  if(!empty($images))
+                                            foreach ($images as $ima) {
+                                                ?>
+                                                <img src='<?php echo base_url($ima); ?>' class='subimage'>
+                                                <?
+                                            }
+                                        ?>
+                                 </div>
                                 </div>
                         </div> <!-- /field -->
                         <div class="field" style="margin-top: 20px;">
@@ -331,7 +337,7 @@ $(document).ready(function()
 
 function preview_image() 
 {
- var total_file=document.getElementById("upload_file").files.length;
+ var total_file=document.getElementById("userFiles").files.length;
  $('#image_preview').empty();
  for(var i=0;i<total_file;i++)
  {

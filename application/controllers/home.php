@@ -49,6 +49,11 @@ class Home extends CI_Controller {
     public function index() {
         $this->check_login();
 
+		// $imageArr = $this->restaurant_m->getImage(UID);
+		// if(!empty($imageArr[0]->HinhAnh)){
+		// 	$images = explode(",", $imageArr[0]->HinhAnh);
+		// 	//echo $imageArr[0];
+		// }
         $nhatro = $this->restaurant_m->getNhatro1();
         $tinh = $this->restaurant_m->getTinh();
         $viewdata = array('nhatro' => $nhatro, 'tinh' => $tinh);
