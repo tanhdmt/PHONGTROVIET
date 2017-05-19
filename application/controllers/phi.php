@@ -26,7 +26,7 @@ class Phi extends CI_Controller {
 
 	public function add()
 	{
-		
+		$this->check_login();
 		if($this->input->post("tenphi") && $this->input->post("dongia"))
 		{
 			$new_tenphi = $this->input->post("tenphi");
@@ -46,12 +46,14 @@ class Phi extends CI_Controller {
 
 	function delete($maphi)
 	{
+		$this->check_login();
 		$this->sport_facility_m->deletePhi($maphi);
 		redirect("/phi");
 	}
 
 	public function edit($maphi)
 	{
+		$this->check_login();
 		if($this->input->post("dongia"))
 		{
 			$new_dongia = $this->input->post("dongia");
@@ -85,6 +87,7 @@ class Phi extends CI_Controller {
 	// }
 	public function index()
 	{
+		$this->check_login();
 		$checkdien = $this->sport_facility_m ->checkDien(UID);
 		$checknuoc = $this->sport_facility_m ->checkNuoc(UID);
 		

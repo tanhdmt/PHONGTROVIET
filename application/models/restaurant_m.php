@@ -17,7 +17,7 @@ class Restaurant_m extends CI_Model {
 
     function getNhatro1()
     {
-        $query = $this->db->query('select nhatro.MaNT, TenNT, DiaChi, SDT, SoLuongPhong, TinhThanh, QuanHuyen, ViDo, KinhDo, DienTich, HinhAnh, min(GiaPhong) as GiaPhong FROM `nhatro`, phongtro, loaiphong where nhatro.MaNT=phongtro.MaNT and loaiphong.MaLoaiPhong = phongtro.MaLoaiPhong and TinhTrang=\'Trống\' group by TenNT');
+        $query = $this->db->query('select * from (select nhatro.MaNT as maso, TenNT, DiaChi, SDT, SoLuongPhong, TinhThanh, QuanHuyen, ViDo, KinhDo, DienTich, HinhAnh, min(GiaPhong) as GiaPhong FROM `nhatro`, phongtro, loaiphong where nhatro.MaNT=phongtro.MaNT and loaiphong.MaLoaiPhong = phongtro.MaLoaiPhong group by TenNT) t1 left join (select nhatro.MaNT as maso, count(*) as Count from nhatro, phongtro where nhatro.MaNT=phongtro.MaNT and TinhTrang=\'Trống\' group by TenNT) t2 on t1.maso = t2.maso');
         $data = array();
 
         foreach (@$query->result() as $row)
@@ -31,7 +31,7 @@ class Restaurant_m extends CI_Model {
 
     function getNhatro2($maquan)
     {
-        $query = $this->db->query('select nhatro.MaNT, TenNT, DiaChi, SDT, SoLuongPhong, TinhThanh, QuanHuyen, ViDo, KinhDo, DienTich, HinhAnh, min(GiaPhong) as GiaPhong FROM `nhatro`, phongtro, loaiphong where nhatro.MaNT=phongtro.MaNT and loaiphong.MaLoaiPhong = phongtro.MaLoaiPhong and TinhTrang=\'Trống\' and QuanHuyen=\''.$maquan.'\' group by TenNT');
+        $query = $this->db->query('select * from (select nhatro.MaNT as maso, TenNT, DiaChi, SDT, SoLuongPhong, TinhThanh, QuanHuyen, ViDo, KinhDo, DienTich, HinhAnh, min(GiaPhong) as GiaPhong FROM `nhatro`, phongtro, loaiphong where nhatro.MaNT=phongtro.MaNT and loaiphong.MaLoaiPhong = phongtro.MaLoaiPhong and QuanHuyen=\''.$maquan.'\' group by TenNT) t1 left join (select nhatro.MaNT as maso, count(*) as Count from nhatro, phongtro where nhatro.MaNT=phongtro.MaNT and TinhTrang=\'Trống\' group by TenNT) t2 on t1.maso = t2.maso');
         $data = array();
 
         foreach (@$query->result() as $row)
@@ -43,6 +43,11 @@ class Restaurant_m extends CI_Model {
         return false;
     } 
 
+    function getChitietNt($mant)
+    {
+        $query = $this->db->query('select * from (select nhatro.MaNT as maso, TenNT, DiaChi, SDT, SoLuongPhong, TinhThanh, QuanHuyen, ViDo, KinhDo, DienTich, HinhAnh, MoTa, min(GiaPhong) as GiaPhong FROM `nhatro`, phongtro, loaiphong where nhatro.MaNT=phongtro.MaNT and loaiphong.MaLoaiPhong = phongtro.MaLoaiPhong and nhatro.MaNT='.$mant.' group by TenNT) t1 left join (select nhatro.MaNT as maso, count(*) as Count from nhatro, phongtro where nhatro.MaNT=phongtro.MaNT and TinhTrang=\'Trống\' group by TenNT) t2 on t1.maso = t2.maso');
+        return $query->result();
+    }
     function getTinh()
     {
         $query = $this->db->from('province')->get();

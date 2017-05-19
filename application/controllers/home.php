@@ -38,7 +38,11 @@ class Home extends CI_Controller {
 		
 		echo(json_encode($tinh_select));
 	}
-
+	public function get_detail($mant)
+	{
+		$detail=$this->restaurant_m->getChitietNt($mant);
+		echo(json_encode($detail[0]));
+	}
 	public function get_khuvuc()
 	{
 		$maquan = $this->input->post('quanid');

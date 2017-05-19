@@ -2945,7 +2945,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endCo
 	left: 50%;
 	z-index: 1050;
 	overflow: auto;
-	width: 560px;
+	width: 630px;
 	margin: -250px 0 0 -280px;
 	background-color: #ffffff;
 	border: 1px solid #999;
@@ -3571,10 +3571,10 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fbb450', endCo
 	position: absolute;
 	top: 40%;
 	left: 15px;
-	width: 40px;
-	height: 40px;
+	/*width: 40px;
+	height: 40px;*/
 	margin-top: -20px;
-	font-size: 60px;
+	font-size: 30px;
 	font-weight: 100;
 	line-height: 30px;
 	color: #ffffff;

@@ -316,3 +316,13 @@ ERROR - 2017-05-18 12:39:09 --> Severity: Warning  --> Creating default object f
 ERROR - 2017-05-18 12:39:09 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
 ERROR - 2017-05-18 12:39:09 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
 ERROR - 2017-05-18 12:39:09 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-18 13:01:37 --> Severity: Notice  --> Undefined variable: error C:\xampp\htdocs\hotel\application\views\login.php 11
+ERROR - 2017-05-18 19:28:14 --> Severity: Notice  --> Undefined variable: error C:\xampp\htdocs\hotel\application\views\login.php 11
+ERROR - 2017-05-18 19:28:20 --> Severity: Notice  --> Undefined variable: images C:\xampp\htdocs\hotel\application\controllers\caidat.php 163
+ERROR - 2017-05-18 19:32:10 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-18 19:32:10 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-18 19:32:10 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-18 19:32:10 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-18 19:32:10 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-18 19:32:10 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-18 19:32:17 --> Severity: Notice  --> Undefined variable: error C:\xampp\htdocs\hotel\application\views\login.php 11

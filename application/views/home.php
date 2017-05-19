@@ -104,31 +104,35 @@
                               //$('#quanhuyen').html(data);
                               //console.log(data);
                               $.each( data2, function( key, value ) {
-                                if(value.HinhAnh!=null){
+                                if(value.Count)
+                                  var tinhtrang = "Số phòng trống: "+value.Count;
+                                else
+                                  var tinhtrang = "Hết phòng";
+                                              if(value.HinhAnh!=null){
                                   var images = (value.HinhAnh).split(',');
                                   var path = "<?php echo base_url(); ?>" + images[0];
-                                  $( "#contentTimkiem" ).append("<div id='content' style='margin-top:20px; border: 1px solid #bfbfbf;'>\
+                                  $( "#contentTimkiem" ).append("<div id='content' onclick='detail("+value.maso+")' style='cursor: pointer;margin-top:20px; border: 1px solid #bfbfbf;background-color:#fff;'>\
                                       <img src="+ path +" style='width:100%;height:150px'>\
                                       <div id='bodyContent' style='padding:10px;'>\
-                                      <h3>Nhà trọ "+value.TenNT+"</h3>\
+                                      <h3 style='color:#22a5f8;'>Nhà trọ "+value.TenNT+"</h3>\
                                       <p>" +value.DiaChi+"</p>\
                                       <p>Số điện thoại:  <strong>" +value.SDT+"</strong></p>\
-                                      <span class='label label-success' style='font-size:13px;'> "+value.GiaPhong+"</span>\
+                                      <span class='label label-warning' style='font-size:13px;'>"+tinhtrang+"</span>\
+                                      <span class='label label-success text-right' style='font-size:13px; text-align:right;'>Giá phòng: "+value.GiaPhong+"</span>\
                                       </div>\
                                       </div>");
                                 } else{
-                                  $( "#contentTimkiem" ).append("<div id='content' style='margin-top:20px; border: 1px solid #bfbfbf;'>\
+                                  $( "#contentTimkiem" ).append("<div id='content' onclick='detail("+value.maso+")' style='cursor: pointer;margin-top:20px; border: 1px solid #bfbfbf;background-color:#fff;'>\
                                       <div id='bodyContent' style='padding:10px;'>\
-                                      <h3>Nhà trọ "+value.TenNT+"</h3>\
+                                       <h3 style='color:#22a5f8;'>Nhà trọ "+value.TenNT+"</h3>\
                                       <p>" +value.DiaChi+"</p>\
                                       <p>Số điện thoại:  <strong>" +value.SDT+"</strong></p>\
-                                      <span class='label label-success' style='font-size:13px;'> "+value.GiaPhong+"</span>\
+                                      <span class='label label-warning' style='font-size:13px;'>"+tinhtrang+"</span>\
+                                      <span class='label label-success text-right' style='font-size:13px;text-align:right;'>Giá phòng: "+value.GiaPhong+"</span>\
                                       </div>\
                                       </div>");
                                 }
 
-
-                                
                               });
                               //$('#city').html('<option value="0">Select City</option>');
                               //$('#state').append('<option value="' + id + '">' + name + '</option>');
@@ -163,7 +167,7 @@
                         '<h3>Nhà trọ '+value.TenNT+'</h3>'+
                         '<div id="bodyContent" >'+
                         '<p>' +value.DiaChi+'</p>'+
-                        '<span class="label label-success" style="font-size:13px;"> '+value.GiaPhong+' </span>'+
+                        '<span class="label label-success" style="font-size:13px;">Giá phòng: '+value.GiaPhong+' </span>'+
                         '</div>'+
                         '</div>';
                   } else{
@@ -171,7 +175,7 @@
                         '<h3>Nhà trọ '+value.TenNT+'</h3>'+
                         '<div id="bodyContent" >'+
                         '<p>' +value.DiaChi+'</p>'+
-                        '<span class="label label-success" style="font-size:13px;"> '+value.GiaPhong+' </span>'+
+                        '<span class="label label-success" style="font-size:13px;">Giá phòng: '+value.GiaPhong+' </span>'+
                         '</div>'+
                         '</div>';
                   }
@@ -220,8 +224,54 @@
                     }
                 });
             });
-            
         });
+        function detail(mant)
+        {
+          $.ajax({
+              url : "<?php echo site_url('home/get_detail/')?>/" + mant,
+              type: "GET",
+              dataType: "JSON",
+              success: function(data)
+              {
+                  $( ".carousel-inner" ).empty();
+                  if(data.HinhAnh!=null){
+                    var images = (data.HinhAnh).split(',');
+                    for(var i=0; i<images.length; i++)
+                    {
+                      var path = "<?php echo base_url(); ?>"+images[i];
+                      if(i == 0)
+                        $(".carousel-inner").append("<div class='item active'>\
+                            <img src="+path+" alt='' style='width:100%; height:300px;'>\
+                            <div class='carousel-caption'>Địa chỉ: "+data.DiaChi+"</div>\
+                          </div>");
+                      else
+                        $(".carousel-inner").append("<div class='item'>\
+                            <img src="+path+" alt='' style='width:100%; height:300px;'>\
+                            <div class='carousel-caption'>Địa chỉ: "+data.DiaChi+"</div>\
+                          </div>");
+                    }
+                  }
+                  $( "#chitiet" ).empty();
+                  $( "#mota" ).empty();
+                  if(value.Count)
+                    var tinhtrang = "Số phòng trống: "+value.Count;
+                  else
+                    var tinhtrang = "Hết phòng";
+                  $( "#chitiet" ).append("<p>Số điện thoại: <strong>" +data.SDT+"</strong></p>\
+                                      <p>Diện tích phòng: <strong>"+data.DienTich+" m2</strong></p>\
+                                      <span class='label label-warning' style='font-size:13px;'>"+tinhtrang+"</span>\
+                                      <span class='label label-success text-right' style='font-size:13px; text-align:right;'>Giá phòng: "+data.GiaPhong+"</span>");
+                  $( "#mota" ).append("<p>" +data.MoTa+"</p>");
+                  $('#modal_form').modal('show'); // show bootstrap modal when complete loaded
+                  $('.modal-title').text('Thông tin Nhà trọ '+data.TenNT); // Set title to Bootstrap modal title
+                  //console.log(data.TenNT);
+              },
+              error: function (jqXHR, textStatus, errorThrown)
+              {
+                  alert('Error get data from ajax');
+              }
+          });
+        }
     </script>
     <style>
        #map {
@@ -234,3 +284,48 @@
        }
 
     </style>
+  <!-- Modal -->
+<div class="modal fade" id="modal_form" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h3 class="modal-title">Person Form</h3>
+            </div>
+            <div class="modal-body">
+              <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                  <span class="icon-angle-left"></span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                  <span class="icon-angle-right"></span>
+                </a>
+              </div>
+              <div class="row">
+                  <div class="span3">
+                    <h4> Chi tiết</h4>
+                    <hr style="margin:0 0 10px 0;width: 100%; color: #b3b3b3; height: 1px; background-color:#b3b3b3;">
+                    <div id="chitiet" style="width: 100%">
+                      
+                    </div>
+                  </div>
+                  <div class="span3">
+                    <h4> Mô tả</h4>
+                    <hr style="margin:0 0 10px 0;width: 100%; color: #b3b3b3; height: 1px; background-color:#b3b3b3;">
+                    <div id="mota" style="width: 100%">
+                      
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="btnSave" onclick="save()" class="btn btn-primary">Đặt phòng</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

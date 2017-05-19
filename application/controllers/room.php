@@ -26,6 +26,7 @@ class Room extends CI_Controller {
 
 	public function add()
 	{
+		$this->check_login();
 		$this->room_m->reseedRoom();
 		//$viewdata = array();
 		if($this->input->post("loaiphong"))
@@ -53,6 +54,7 @@ class Room extends CI_Controller {
 
 	function delete($maphong)
 	{
+		$this->check_login();
 		$this->room_m->deleteRoomRange($maphong);
 		$this->room_m->reseedRoom();
 		redirect("/room");
@@ -60,6 +62,7 @@ class Room extends CI_Controller {
 
 	public function edit($maphong)
 	{
+		$this->check_login();
 		//$maphong = 14;
 		if($this->input->post("nguoithue"))
 		{
@@ -96,6 +99,7 @@ class Room extends CI_Controller {
 
 	public function edit1($maphong)
 	{
+		$this->check_login();
 		//$maphong = 14;
 		if($this->input->post("nguoithue"))
 		{
@@ -132,6 +136,7 @@ class Room extends CI_Controller {
 
 	public function chothue($maphong)
 	{
+		$this->check_login();
 		if($this->input->post("nguoithue") && $this->input->post("ngaythue"))
 		{
 			$new_nguoithue = $this->input->post("nguoithue");
@@ -166,6 +171,7 @@ class Room extends CI_Controller {
 
 	public function history($maphong)
 	{
+		$this->check_login();
 		$his = $this->room_m->getLichsu($maphong);
 
 		$viewdata = array('his' => $his);

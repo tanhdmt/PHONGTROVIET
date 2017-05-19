@@ -50,7 +50,6 @@
                                   class="icon-user"></i> Xin chào Nhà trọ <?=FULLNAME?> (<?=USERNAME?>) <b class="caret"></b></a>
                   <ul class="dropdown-menu">
                     <li><a href="javascript:;">Cài đặt</a></li>
-                    <li><a href="javascript:;">Trợ giúp</a></li>
                     <li><a href="<?php echo base_url('login/logout'); ?>">Đăng xuất</a></li>
                   </ul>
                 </li>

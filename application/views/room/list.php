@@ -15,13 +15,13 @@
 			<table id="myTable" class="table table-striped">
 				<thead style="background-color: #22a5f8; color:#fff;">
 				  <tr>
-				    <th > Mã phòng </th>
-				    <th > Ngày thuê </th>
-				    <th > Người thuê </th>
+				    <th style="width: 10%"> Mã phòng </th>
+				    <th style="width: 10%"> Ngày thuê </th>
+				    <th style="width: 25%"> Người thuê </th>
 				    <!-- <th> Dự định trả </th> -->
-				    <th > Loại phòng </th>
-				    <th > Số người ở trong phòng </th>
-				    <th  class="td-actions"> Công cụ </th>
+				    <th style="width: 10%"> Loại phòng </th>
+				    <th style="text-align: center; width: 15%"> Số người ở trong phòng </th>
+				    <th class="td-actions" style="width: 30%"> Công cụ </th>
 				  </tr>
 				</thead>
 				<tbody>
