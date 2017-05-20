@@ -31,6 +31,11 @@ class Login extends CI_Controller {
         $this->load->view('footer');
     }
 
+    public function edit_info()
+    {
+        
+    }
+    
     public function logout() {
         $this->user_l->logout();
 	redirect('/');

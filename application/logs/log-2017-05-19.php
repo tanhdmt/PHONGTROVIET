@@ -172,3 +172,8 @@ ERROR - 2017-05-19 12:45:09 --> Severity: Warning  --> Creating default object f
 ERROR - 2017-05-19 12:45:09 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
 ERROR - 2017-05-19 12:45:09 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
 ERROR - 2017-05-19 12:45:09 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-19 13:13:04 --> Severity: Notice  --> Undefined variable: error C:\xampp\htdocs\hotel\application\views\login.php 11
+ERROR - 2017-05-19 13:13:06 --> Severity: Notice  --> Undefined variable: viewdata C:\xampp\htdocs\hotel\application\controllers\register.php 44
+ERROR - 2017-05-19 13:36:33 --> Severity: Notice  --> Undefined variable: viewdata C:\xampp\htdocs\hotel\application\controllers\register.php 48
+ERROR - 2017-05-19 13:50:58 --> Severity: Notice  --> Undefined variable: viewdata C:\xampp\htdocs\hotel\application\controllers\register.php 48
+ERROR - 2017-05-19 13:50:58 --> Severity: Notice  --> Undefined variable: error C:\xampp\htdocs\hotel\application\views\login.php 11

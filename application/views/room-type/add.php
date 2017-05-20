@@ -2,7 +2,7 @@
 	
 	<div class="content clearfix">
 		
-		<form action="<?php echo base_url(); ?>room-type/add" method="post">
+		<form action="<?php echo base_url(); ?>room-type/add" method="post" id="form-add">
 		
 			<h1>Thêm loại phòng mới</h1>		
 <? if(isset($error)) {?>
@@ -34,7 +34,7 @@
 			
 			<div class="login-actions">
 				
-				<button class="button btn btn-success btn-large">Thêm</button>
+				<button class="button btn btn-success btn-large" type="submit">Thêm</button>
 				
 			</div> <!-- .actions -->
 			

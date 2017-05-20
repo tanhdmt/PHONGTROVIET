@@ -11,7 +11,11 @@ class Register extends CI_Controller {
 				if ($this->input->post("password") != $this->input->post("cf-password")){
 					$error_message = "Password không khớp<br>"; 
 					$viewdata = array('error_message' => $error_message);
-				} else {
+				} else if($this->user_m->check_user($this->input->post("username"))){
+					$error_message = "Username đã tồn tại<br>"; 
+					$viewdata = array('error_message' => $error_message);
+				}
+				else {
 					$username = $this->input->post("username");
 					$password = $this->input->post("password");
 					$tennt = $this->input->post("tennt");
