@@ -49,6 +49,14 @@ class Home extends CI_Controller {
 		$quan = $this->restaurant_m->getToadoquan($maquan);
 		echo(json_encode($quan[0]));
 	}
+	public function datphong($mant)
+	{
+		$tennd = $this->input->post('tennd');
+		$sdt = $this->input->post('sdt');
+		$ghichu = $this->input->post('ghichu');
+		$ngaydat = date("Y-m-d");
+		$dp = $this->restaurant_m->datphong($mant, $tennd, $sdt, $ghichu, $ngaydat);
+	}
 
     public function index() {
         $this->check_login();

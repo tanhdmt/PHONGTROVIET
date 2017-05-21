@@ -117,6 +117,17 @@ class Departments_m extends CI_Model {
         return $query->result();
     }
 
+    function check_tentv($tentv, $maphong)
+    {
+        $query = $this->db->get_where('thanhvien', array('TenTV' => $tentv, 'MaPhong' =>$maphong));
+        return $query->result();
+    }
+    function check_tentv2($tentv, $maphong, $tentvcu)
+    {
+        $query = $this->db->query('select * from thanhvien where TenTV=\''.$tentv.'\' and MaPhong='.$maphong.' and TenTV <> \''.$tentvcu.'\'');
+        return $query->result();
+    }
+    
     function getGhichu($maphong)
     {
         $query = $this->db->query('select * from phongtro where MaPhong='.$maphong);

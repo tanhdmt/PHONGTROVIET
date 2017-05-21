@@ -8,7 +8,8 @@
 				<div class="content clearfix">
 					
 					<form action="<?php echo base_url(); ?>hoadon/edit/<?=$hoadon->MaPhong?>/<?=$hoadon->Nam?>/<?=$hoadon->Thang?>/<?=$hoadon->MaHD?>" method="post">
-					
+					<button class="button btn btn-success" onclick="printDiv()"><i class="btn-icon-only icon-print" ></i> In hóa đơn</button>
+					<div id="DivIdToPrint">	
 						<h2> <?= "Chi tiết hóa đơn tháng ".$hoadon->Thang."/".$hoadon->Nam ?> </h2>
 						<br></br>
 						<table class="table table-striped ">
@@ -111,7 +112,7 @@
 			                    </tr>
 			                </tfoot>
 						</table>
-						
+					</div>
 						<div class="login-actions">
 				
 							<a href="<?php echo base_url(); ?>hoadon/info/<?=$hoadon->MaPhong?>" class="button btn btn-success btn-large" style="float: left;"><i class="btn-icon-only icon-chevron-left" ></i> Quay lại Danh sách hóa đơn</a>
@@ -138,3 +139,27 @@
 		text-align: center;
 	}
 </style>
+
+<script type="text/javascript">
+	function printDiv() 
+	{
+
+	  var divToPrint=document.getElementById('DivIdToPrint');
+
+	  // var newWin=window.open('','Print-Window');
+
+	  // newWin.document.open();
+
+	  // newWin.document.write('<html><body onload="window.print()">'+divToPrint.innerHTML+'</body></html>');
+
+	  // newWin.document.close();
+
+	  // setTimeout(function(){newWin.close();},10);
+	  newWin= window.open("");
+	  //var myStyle = '<link href="<?php echo base_url(); ?>css/bootstrap.min.css" rel="stylesheet">';
+	   newWin.document.write('<div id="DivIdToPrint">' + $('#DivIdToPrint').html() + '</div>');
+	   newWin.print();
+	   newWin.close();
+
+	}
+</script>

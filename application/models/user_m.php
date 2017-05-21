@@ -58,6 +58,23 @@ class User_m extends CI_Model {
         $this->db->update('nhatro', $data); 
     }
 
+    function get_datphong($mant)
+    {
+        $query = $this->db->get_where('datphong', array('MaNT' => $mant));
+        return $query->result();
+    }
+
+    function deleteDp($madp)
+    {
+        $this->db->delete('datphong', array('MaDP' => $madp));
+        return $this->db->affected_rows();
+    }
+
+    function get_soluongdp($mant)
+    {
+        $query = $this->db->query('select count(*) as Count from datphong where MaNT='.$mant);
+        return $query->result();
+    }
 
      function update_user2($mant, $username, $tennt)
     {

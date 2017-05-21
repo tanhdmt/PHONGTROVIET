@@ -107,6 +107,31 @@ class Thanhvien extends CI_Controller {
 		$this->load->view('footer');
 	}
 
+	public function check_tenTV()
+	{
+		$tentv = $this->input->post('tentv');
+		$maphong = $this->input->post('maphong');
+		$info = $this->departments_m->check_tentv($tentv, $maphong);
+		if($info)
+			$check = 1;
+		else
+			$check = 0;
+		echo(json_encode($check));
+	}
+
+	public function check_tenTV2()
+	{
+		$tentv = $this->input->post('tentv');
+		$maphong = $this->input->post('maphong');
+		$tentvcu = $this->input->post('tentvcu');
+		$info = $this->departments_m->check_tentv2($tentv, $maphong, $tentvcu);
+		if($info)
+			$check = 1;
+		else
+			$check = 0;
+		echo(json_encode($check));
+	}
+
 	public function traphong($maphong)
 	{
 		$date=date("Y-m-d");

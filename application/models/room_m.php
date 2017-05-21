@@ -112,7 +112,7 @@ class Room_m extends CI_Model {
 
     function getRoomDD($maphong)
     {
-        $sql = 'select *, (select TenTV from thanhvien where thanhvien.MaPhong = phongtro.MaPhong and ChucVu = \'DD\') as NguoiDD from phongtro where MaPhong ='.$maphong;  
+        $sql = 'select *, (select TenTV from thanhvien where thanhvien.MaPhong = phongtro.MaPhong and ChucVu = \'DD\' and TinhTrang =\'Đã thuê\') as NguoiDD from phongtro where MaPhong ='.$maphong;  
         $query = $this->db->query($sql);
         return $query->result();
     }
