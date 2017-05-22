@@ -150,6 +150,11 @@ class Room_m extends CI_Model {
 
     }
 
+    function check_type($type, $mant)
+    {
+        $query = $this->db->get_where('loaiphong', array('TenLoaiPhong' => $type, 'MaNT' =>$mant));
+        return $query->result();
+    }
 
     function add_room_sale($data) {
         $query = $this->db->join("room_type","room_type.room_type = room.room_type", "left")->get_where("room", array('room_id' => $data['room_id']));
@@ -180,6 +185,12 @@ class Room_m extends CI_Model {
     function getThanhvien($maphong)
     {
         $query = $this->db->query('select TenTV from thanhvien where MaPhong = '.$maphong.' and TinhTrang = \'Đang ở\'');
+        return $query->result();
+    }
+
+    function listThanhVien($mant)
+    {
+        $query = $this->db->query('select thanhvien.MaPhong as mp, TenTV, Sdt, CMND, GioiTinh, thanhvien.TinhTrang, thanhvien.NgayThue from thanhvien, phongtro where thanhvien.TinhTrang=\'Đang ở\' and thanhvien.MaPhong = phongtro.MaPhong and MaNT='.$mant.' order by mp');
         return $query->result();
     }
 

@@ -119,12 +119,12 @@ class Departments_m extends CI_Model {
 
     function check_tentv($tentv, $maphong)
     {
-        $query = $this->db->get_where('thanhvien', array('TenTV' => $tentv, 'MaPhong' =>$maphong));
+        $query = $this->db->query('select * from thanhvien where TenTV=\''.$tentv.'\' and MaPhong='.$maphong.' and TinhTrang=\'Đang ở\'');
         return $query->result();
     }
     function check_tentv2($tentv, $maphong, $tentvcu)
     {
-        $query = $this->db->query('select * from thanhvien where TenTV=\''.$tentv.'\' and MaPhong='.$maphong.' and TenTV <> \''.$tentvcu.'\'');
+        $query = $this->db->query('select * from thanhvien where TenTV=\''.$tentv.'\' and MaPhong='.$maphong.' and TenTV <> \''.$tentvcu.'\' and TinhTrang=\'Đang ở\'');
         return $query->result();
     }
     

@@ -5,7 +5,7 @@
         <div class="span12">		
 			<h2> Danh sách hóa đơn</h2>
 			<br>
-			<a href="<?php echo base_url(); ?>hoadon/add/<?=$maphong?>" onclick="return confirm('Bạn có muốn thêm hóa đơn?')" class="btn btn-small btn-primary"><i class="btn-icon-only icon-ok"></i>Thêm hóa đơn</a>
+			<button id="btnAdd" onclick="checkMonth()" class="btn btn-small btn-primary"><i class="btn-icon-only icon-ok"></i>Thêm hóa đơn</button>
 			<br><br>
 
 			<table class="table table-striped ">
@@ -64,3 +64,35 @@
 	</div>
   </div>
 </div>
+<script type="text/javascript">
+	function checkMonth()
+	{
+		$.ajax({
+            type:"POST",
+            async: false,
+            url: "<?php echo base_url(); ?>hoadon/add/<?=$maphong?>", // script to validate in server side
+            data: {},
+            success: function(data) {
+                if (data==0)
+                  $('#modal_thongbao_2').modal('show');
+              	else
+              		location.reload();
+            }
+        });
+	}        
+</script>
+<div class="modal fade" id="modal_thongbao_2" role="dialog" >
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: #ff4d4d;color: #fff">
+                <h3 class="modal-title" id="modal-thongbao2-title">Thông báo</h3>
+            </div>
+            <div class="modal-body form">
+                <h4><i class="icon-warning-sign icon-2x" style="color: #ff4d4d;"></i> Đã có hóa đơn của tháng này</h4>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-dismiss="modal" id="btnSubmit">OK</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

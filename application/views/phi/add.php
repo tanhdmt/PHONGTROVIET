@@ -15,7 +15,7 @@
 				
 				<div class="field">
 					<label for="department_budget">Đơn giá:</label>
-					<input type="text" id="dongia" name="dongia" required value="" maxlength="11" placeholder=""/>
+					<input type="text" id="dongia" name="dongia" required value="" maxlength="11" placeholder="" onkeypress="convert()" />
 				</div> <!-- /password -->
 
 			</div> <!-- /login-fields -->
@@ -34,3 +34,9 @@
 	
 </div> <!-- /account-container -->
 <br>
+<script type="text/javascript">
+	function convert()
+	{
+		$("#dongia").digits();
+	}
+</script>

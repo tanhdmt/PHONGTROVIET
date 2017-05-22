@@ -32,12 +32,13 @@ class Hoadon extends CI_Controller {
 		$count = $this->customer_m->countMonth($maphong, $date);
 		if($count[0]->Count == 0){
 			$this->customer_m->addHoadon($maphong, $date);
-		}
+			$check = 1;
+		} else
+			$check = 0;
 		//  else{
 		// 	$_SESSION['Error'] = "You left one or more of the required fields.";
 		// }
-
-		redirect("/hoadon/info/".$maphong);
+		echo(json_encode($check));
 	}
 
 	public function edit($maphong, $nam, $thang, $mahd)
@@ -46,7 +47,9 @@ class Hoadon extends CI_Controller {
 		$chiphi = $this->customer_m->get_chiphi(UID);
 		$checkd = $this->customer_m->checkDien($maphong, $thang, $nam);
 		$checkn = $this->customer_m->checkNuoc($maphong, $thang, $nam);
-		//echo $hoadon[0]->TongTien;
+
+		$tongtiencu = $hoadon[0]->TongTien;
+		$conlaicu = $hoadon[0]->ConLai;
 		if($this->input->post("moidien") && $this->input->post("moinuoc"))
 		{
 			$cudien = $this->input->post("cudien");
@@ -66,15 +69,11 @@ class Hoadon extends CI_Controller {
 			$i = 0;
 			$datra = $this->input->post("datra");
 			$no = $this->input->post("no");
-			$datra = $this->input->post("datra");
 			$ngaytra = $this->input->post("ngaytra");
-			$tongtien = $this->input->post("ttphong") + (($moidien - $cudien)*$this->input->post("dgdien")) + (($moinuoc - $cunuoc)*$this->input->post("dgnuoc"));
-			foreach($chiphi as $cp)
-			{
-				++$i;
-				$tongtien += $this->input->post("thanhtien".$i);
-			}
-			$conlai = $tongtien - $datra + $no;
+			$tongtien = $this->input->post("tongcong");
+			$conlai = $this->input->post("conlai");
+			$datra = $tongtien - $conlai;
+
 
 			$this->customer_m->updateHoadon($mahd, $tongtien, $no, $datra, $conlai, $ngaytra);
 			redirect("/hoadon/info/".$maphong);

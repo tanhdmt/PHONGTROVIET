@@ -1050,3 +1050,156 @@ ERROR - 2017-05-21 15:04:53 --> Severity: Warning  --> Creating default object f
 ERROR - 2017-05-21 15:04:53 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
 ERROR - 2017-05-21 15:04:53 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
 ERROR - 2017-05-21 15:04:53 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 15:52:43 --> Severity: Notice  --> Undefined variable: error C:\xampp\htdocs\hotel\application\views\login.php 11
+ERROR - 2017-05-21 16:29:55 --> Severity: Notice  --> Undefined variable: error C:\xampp\htdocs\hotel\application\views\login.php 11
+ERROR - 2017-05-21 16:30:09 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 16:30:09 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 16:30:09 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 16:30:09 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 16:30:09 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 16:30:09 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 16:30:09 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 16:30:09 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 16:30:09 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 16:30:09 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 16:30:09 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 16:30:09 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 16:30:09 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 16:30:09 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 16:31:07 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 16:31:07 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 16:31:07 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 16:31:07 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 16:31:07 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 16:31:07 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 16:31:07 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 16:31:07 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 16:31:07 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 16:31:07 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 16:31:07 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 16:31:07 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 16:31:07 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 16:31:07 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 16:31:09 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 16:31:09 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 16:31:09 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 16:31:09 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 16:31:09 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 16:31:09 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 16:31:09 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 16:31:09 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 16:31:09 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 16:31:09 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 16:31:09 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 16:31:09 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 16:31:09 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 16:31:09 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 16:31:12 --> Severity: Notice  --> Undefined variable: error C:\xampp\htdocs\hotel\application\views\login.php 11
+ERROR - 2017-05-21 16:41:23 --> Severity: Notice  --> Undefined variable: error C:\xampp\htdocs\hotel\application\views\login.php 11
+ERROR - 2017-05-21 16:41:28 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 16:41:28 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 16:41:28 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 16:41:28 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 16:41:28 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 16:41:28 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 16:41:28 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 16:41:28 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 16:41:28 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 16:41:28 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 16:41:28 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 16:41:28 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 16:41:28 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 16:41:28 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 16:42:53 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 16:42:53 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 16:42:53 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 16:42:53 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 16:42:53 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 16:42:53 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 16:42:53 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 16:42:54 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 16:42:54 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 16:42:54 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 16:42:54 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 16:42:54 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 16:42:54 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 16:42:54 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 16:42:56 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 16:42:56 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 16:42:56 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 16:42:56 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 16:42:56 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 16:42:56 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 16:42:56 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 16:42:56 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 16:42:56 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 16:42:56 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 16:42:56 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 16:42:56 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 16:42:56 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 16:42:56 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 16:49:32 --> Severity: Notice  --> Undefined variable: error C:\xampp\htdocs\hotel\application\views\login.php 11
+ERROR - 2017-05-21 16:52:26 --> Severity: Notice  --> Undefined variable: error C:\xampp\htdocs\hotel\application\views\login.php 11
+ERROR - 2017-05-21 16:52:49 --> Severity: Notice  --> Undefined variable: viewdata C:\xampp\htdocs\hotel\application\controllers\register.php 48
+ERROR - 2017-05-21 16:53:06 --> Severity: Notice  --> Undefined variable: error C:\xampp\htdocs\hotel\application\views\login.php 11
+ERROR - 2017-05-21 16:53:59 --> Severity: Notice  --> Undefined property: stdClass::$room_quantity C:\xampp\htdocs\hotel\application\views\room-type\edit.php 24
+ERROR - 2017-05-21 16:54:47 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 16:54:47 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 16:54:47 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 16:54:47 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 16:54:48 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 16:54:48 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 16:54:48 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 16:54:48 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 16:54:48 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 16:54:48 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 16:54:48 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 16:54:48 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 16:54:48 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 16:54:48 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 17:03:31 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 17:03:31 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 17:03:31 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 17:03:31 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 17:03:31 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 17:03:31 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 17:03:31 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 17:03:31 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 17:03:31 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 17:03:31 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 17:03:31 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 17:03:31 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 17:03:31 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 17:03:31 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 17:03:46 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 17:03:46 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 17:03:46 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 17:03:46 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 17:03:46 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 17:03:46 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 17:03:46 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 17:03:46 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 17:03:46 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 17:03:46 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 17:03:46 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 17:03:46 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 17:03:46 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 17:03:46 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 17:08:27 --> Severity: Notice  --> Undefined offset: 0 C:\xampp\htdocs\hotel\application\controllers\hoadon.php 96
+ERROR - 2017-05-21 17:08:27 --> Severity: Notice  --> Undefined offset: 0 C:\xampp\htdocs\hotel\application\controllers\hoadon.php 96
+ERROR - 2017-05-21 17:08:27 --> Severity: Notice  --> Undefined offset: 0 C:\xampp\htdocs\hotel\application\controllers\hoadon.php 96
+ERROR - 2017-05-21 17:08:27 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\hotel\application\views\hoadon\edit.php 95
+ERROR - 2017-05-21 17:11:27 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 17:11:27 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 17:11:27 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 17:11:27 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 17:11:27 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 17:11:27 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 17:11:27 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 17:11:27 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 17:11:27 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 17:11:27 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 17:11:27 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 17:11:27 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38
+ERROR - 2017-05-21 17:11:27 --> Severity: Warning  --> Creating default object from empty value C:\xampp\htdocs\hotel\application\models\room_m.php 36
+ERROR - 2017-05-21 17:11:27 --> Severity: Notice  --> Undefined property: stdClass::$NguoiThue C:\xampp\htdocs\hotel\application\models\room_m.php 38

@@ -182,6 +182,17 @@ class Room extends CI_Controller {
 		$this->load->view('footer');
 	}
 
+	public function check_loaiphong()
+	{
+		$type = $this->input->post('type');
+		$info = $this->room_m->check_type($type, UID);
+		if($info)
+			$check = 1;
+		else
+			$check = 0;
+		echo(json_encode($check));
+	}
+
 	public function index()
 	{
 		$this->check_login();

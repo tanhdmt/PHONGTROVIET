@@ -326,13 +326,7 @@
  -->
 
 <script>
-$(document).ready(function() 
-{ 
- $('form').ajaxForm(function() 
- {
-  alert("Uploaded SuccessFully");
- }); 
-});
+
 
 function preview_image() 
 {

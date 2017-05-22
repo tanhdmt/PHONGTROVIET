@@ -3,10 +3,12 @@
     <div class="container">
       <div class="row">
         <div class="span12">
+        	<h2> Danh sách chi phí </h2>	
+        	<br>
 			<a href="<?php echo base_url(); ?>phi/add" class="btn btn-small btn-primary"><i class="btn-icon-only icon-ok"></i>Thêm phí mới</a>
 			<br><br>
-			<table class="table table-striped table-bordered">
-				<thead>
+			<table class="table table-striped">
+				<thead style="background-color: #22a5f8; color:#fff;">
 				  <tr>
 				    <th> Tên phí </th>
 				    <th> Đơn giá </th>

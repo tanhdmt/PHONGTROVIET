@@ -70,19 +70,13 @@
 	        }, 
 	        "Đã có tên thành viên này trong phòng."
 	    );
-	    $.validator.addMethod("lettersonly", 
-	    	function(value, element) {
-	  			return this.optional(element) || /^[a-z]+$/i.test(value);
-			}, 
-			"Chỉ nhập chữ cái"
-		); 
+	  
 	    $("#edit").validate({
 	        rules: {
 	          tentv:{
 	            required: true,
 	            maxlength: 50,
-	            checkTenTV: true,
-	            lettersonly: true
+	            checkTenTV: true
 	          },
 	          sdt:{
 	            minlength: 10,
